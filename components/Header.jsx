@@ -32,7 +32,7 @@ const Header = (props) => {
               <li>
                 <Link href="/services">About</Link>
               </li>
-              <li>
+              <li className={classes.headerButton}>
                 <Link className={classes.button} href="/">
                   Get In Touch
                 </Link>
