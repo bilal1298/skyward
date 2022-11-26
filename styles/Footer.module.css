@@ -1,0 +1,9 @@
+.footer{
+    min-height: 50vh;
+    background: #1d1d1d;
+    padding: 70px 0;
+}
+
+.footer h2{
+    color: #fff;
+}

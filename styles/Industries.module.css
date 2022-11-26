@@ -1,0 +1,32 @@
+.industries{
+    padding: 70px 0;
+}
+
+.industries p {
+    margin-bottom: 70px
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.icons:last-of-type{
+    margin-bottom: 50px;
+}
+
+.icon{
+    width: 100%;
+    text-align: center;
+}
+
+.icon img{
+    width: 20%;
+}
+
+.icon p{
+    font-weight: bold;
+    margin: 20px;
+}

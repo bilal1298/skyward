@@ -1,0 +1,33 @@
+.blog{
+    padding: 70px 0;
+    background-color: #002eff;
+}
+
+.blog h2{
+    color: #fff;
+}
+
+.blogs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.blogItem{
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+
+.blogBody{
+    padding: 20px;
+    text-align: center;
+}
+
+.blogBody p{
+    margin: 10px 0 40px;
+}

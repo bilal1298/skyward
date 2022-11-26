@@ -1,0 +1,70 @@
+.heroText {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.heroImage {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.heroText h1 {
+  font-family: "veronabold";
+  font-size: 50px;
+  color: #fff;
+}
+
+.heroText p {
+  margin: 20px 0 30px;
+  color: #fff;
+}
+
+section.banner {
+    background-image: url('../public/bannerBg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+div.banner {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.reviews {
+  display: flex;
+  margin-top: 35px;
+  width: 50%;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+}
+
+.review img {
+  max-width: 90%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #1a58fe;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}

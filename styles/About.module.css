@@ -1,0 +1,35 @@
+.about{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.about a{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+
+.flipboxContainer1{
+    margin-top: 70px;
+}
+
+.flipboxContainer1, .flipboxContainer2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flipbox{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 8%);
+    margin: 10px;
+}
+
+.flipboxContainer2 .flipbox{
+    flex-basis: 25%;
+}

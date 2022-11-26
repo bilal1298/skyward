@@ -1,0 +1,16 @@
+.whyUs {
+  padding: 70px 0;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.whyUs a {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  margin-top: 30px;
+}
