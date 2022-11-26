@@ -3,7 +3,7 @@ import classes from "../styles/Contact.module.css";
 
 const Contact = () => {
   const submitHandler = (e) => {
-    e.prevent.default();
+    e.preventDefault();
   };
   return (
     <section className={classes.contact}>
