@@ -26,14 +26,13 @@ body {
   font-family: "veronabold";
   font-size: 45px;
   text-align: center;
-  width: max-content;
   margin: 0 auto;
 }
 
 .title::after {
   top: 5px;
   content: "";
-  width: 30%;
+  width: 10%;
   height: 5px;
   margin: 0 auto;
   background-color: #fece1a;
@@ -41,7 +40,7 @@ body {
   position: relative;
 }
 
-p.subtitle{
+p.subtitle {
   text-align: center;
   margin: 40px 0 30px;
 }
@@ -78,6 +77,15 @@ a {
   color: #1d1d1d !important;
 }
 
+.my-button-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+
+/*---------- Testimonial Swiper Start ----------*/
+
 .testimonialSwiper .swiper-button-next::after,
 .testimonialSwiper .swiper-button-prev::after {
   font-size: 30px !important;
@@ -94,3 +102,5 @@ a {
 .testimonialSwiper .swiper-button-prev.swiper-button-disabled {
   opacity: 0.1;
 }
+
+/*---------- Testimonial Swiper End ----------*/

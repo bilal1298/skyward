@@ -1,16 +1,9 @@
-.industries{
-    padding: 70px 0;
-}
-
-.industries p {
-    margin-bottom: 70px
-}
-
 .icons{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+    margin-top: 50px;
 }
 
 .icons:last-of-type{

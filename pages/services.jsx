@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import Banner from "../components/ServicesPage/ServicesBanner";
+import banner from "../public/banner.png";
 const services = () => {
   return (
-    <div>services</div>
-  )
-}
+    <React.Fragment>
+      <Banner/>
+    </React.Fragment>
+  );
+};
 
-export default services
+export default services;

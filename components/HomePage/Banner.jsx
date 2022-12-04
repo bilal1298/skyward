@@ -1,23 +1,17 @@
 import React from "react";
-import classes from "../styles/Banner.module.css";
+import classes from "../../styles/Banner.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import clutch from '../public/clutchReview.png'
-import google from '../public/googleReview.png'
-import banner from '../public/banner.png'
+import clutch from "../../public/clutchReview.png";
+import google from "../../public/googleReview.png";
 
-const Banner = () => {
+const Banner = ({ title, desc, heroImg, bg }) => {
   return (
-    <section className={classes.banner}>
+    <section className={`${classes.banner} ${bg ? classes.bg : undefined}`}>
       <div className={`container ${classes.banner}`}>
         <div className={classes.heroText}>
-          <h1>
-            Best Digital <br /> Marketing Agency
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facere possimus sequi voluptatem optio adipisci, dolorum at magnam quasi necessitatibus, quae totam amet quos ea minus
-            tempora consequatur earum a.
-          </p>
+          {title}
+          {desc}
           <Link href={"/"} className="my-button">
             Get In Touch
           </Link>
@@ -31,7 +25,7 @@ const Banner = () => {
           </div>
         </div>
         <div className={classes.heroImage}>
-          <Image src={banner} alt="" />
+          <Image src={heroImg} alt="" />
         </div>
       </div>
     </section>

@@ -1,12 +1,3 @@
-.blog{
-    padding: 70px 0;
-    background-color: #002eff;
-}
-
-.blog h2{
-    color: #fff;
-}
-
 .blogs{
     display: flex;
     justify-content: space-between;

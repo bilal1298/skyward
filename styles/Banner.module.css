@@ -19,7 +19,11 @@
   color: #fff;
 }
 
-section.banner {
+section.banner{
+  background-color: #99b4ff;
+}
+
+section.banner.bg {
     background-image: url('../public/bannerBg.jpg');
     background-position: center;
     background-size: cover;

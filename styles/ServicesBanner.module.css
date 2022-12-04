@@ -1,0 +1,56 @@
+section.banner {
+  min-height: 100vh;
+  background-color: /*#b3c0ff*/ #99b4ff;
+  background-image: url("../public/bannerBg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+div.banner {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroText {
+  width: 45%;
+}
+
+.heroText h1 {
+  font-family: "veronabold";
+  font-size: 40px;
+  color: #fff;
+}
+
+.heroText p {
+  color: #fff;
+  margin: 20px 0 30px;
+}
+
+.form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px 0 rgb(0 0 0 / 8%);
+  width: 45%;
+}
+
+.inputGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formGroup {
+  width: 100%;
+  margin: 0 5px;
+}
+
+.formGroup textarea {
+  height: 100px;
+}
+
+.inputButton {
+  margin-top: 20px;
+}

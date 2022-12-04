@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
-import Layout from "../components/Layout";
+import Layout from "../components/UI/Layout";
+import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
   const [offset, setOffset] = useState(0);
@@ -14,10 +16,28 @@ function MyApp({ Component, pageProps }) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const router = useRouter();
+
   return (
-    <Layout offset={offset}>
-      <Component {...pageProps} />
-    </Layout>
+    <AnimatePresence exitBeforeEnter>
+      <motion.div
+        initial="initialState"
+        animate="animateState"
+        exit="exitState"
+        key={router.route}
+        transition={{ duration: 0.7 }}
+        variants={{
+          initialState: { opacity: 0, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" },
+          animateState: { opacity: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" },
+          exitState: { clipPath: "polygon(0% 0, 1% 0, 1% 100%, 1% 100%)" },
+        }}
+        className="base-page-size"
+      >
+        <Layout offset={offset}>
+          <Component {...pageProps} />
+        </Layout>
+      </motion.div>
+    </AnimatePresence>
   );
 }
 

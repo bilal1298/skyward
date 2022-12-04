@@ -5,7 +5,7 @@ import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ServicesSub from "./ServicesSub";
 import Image from "next/image";
-import logo from '../public/illwhite.png'
+import logo from "../public/illwhite.png";
 
 const Header = (props) => {
   const [serviceActive, setServiceActive] = useState(false);
@@ -14,7 +14,9 @@ const Header = (props) => {
       <header className={`${classes.header} ${props.offset > 30 ? classes.scrolled : undefined}`}>
         <nav className={`container ${classes.nav}`}>
           <div className={classes.logo}>
-            <Image src={logo} alt="" />
+            <Link href="/">
+              <Image src={logo} alt="" />
+            </Link>
           </div>
           <div className={classes.menu}>
             <ul>
