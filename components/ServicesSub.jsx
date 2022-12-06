@@ -5,20 +5,12 @@ import DMSubMenu from "./DMSubMenu";
 import WDSubMenu from "./WDSubMenu";
 import WLSubMenu from "./WLSubMenu";
 import DSubMenu from "./DSubMenu";
-import { motion } from "framer-motion";
 
 const ServicesSub = (props) => {
   const [activeMenu, setActiveMenu] = useState("dm");
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.01 }}
-      className={`container ${classes.servicesSubContainer}`}
-      onMouseEnter={() => props.setServiceActive(true)}
-      onMouseLeave={() => props.setServiceActive(false)}
-    >
+    <div className={`container ${classes.servicesSubContainer}`} onMouseEnter={() => props.setServiceActive(true)} onMouseLeave={() => props.setServiceActive(false)}>
       <div className={classes.menu}>
         <ul>
           <li className={activeMenu === "dm" ? classes.active : undefined} onMouseEnter={() => setActiveMenu("dm")}>
@@ -41,7 +33,7 @@ const ServicesSub = (props) => {
       {activeMenu === "wd" && <WDSubMenu />}
       {activeMenu === "wl" && <WLSubMenu />}
       {activeMenu === "d" && <DSubMenu />}
-    </motion.div>
+    </div>
   );
 };
 

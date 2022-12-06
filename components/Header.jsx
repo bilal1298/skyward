@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ServicesSub from "./ServicesSub";
 import Image from "next/image";
 import logo from "../public/illwhite.png";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Header = (props) => {
   const [serviceActive, setServiceActive] = useState(false);
@@ -42,7 +43,13 @@ const Header = (props) => {
             </ul>
           </div>
         </nav>
-        {serviceActive && <ServicesSub setServiceActive={setServiceActive} />}
+        <AnimatePresence>
+          {serviceActive && (
+            <motion.div initial={{ scale: 0, y: -150 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0, y: -150 }} transition={{ duration: 0.3 }} className={classes.subContainer}>
+              <ServicesSub setServiceActive={setServiceActive} />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
     </>
   );

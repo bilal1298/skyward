@@ -72,3 +72,8 @@
   background-color: #fece1a;
   color: #1d1d1d !important;
 }
+
+.subContainer{
+  width: 100%;
+  position: absolute;
+}
