@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "../../styles/Banner.module.css";
-import Link from "next/link";
+import Button from "../UI/Button";
 import Image from "next/image";
 import clutch from "../../public/clutchReview.png";
 import google from "../../public/googleReview.png";
@@ -12,9 +12,7 @@ const Banner = ({ title, desc, heroImg, bg }) => {
         <div className={classes.heroText}>
           {title}
           {desc}
-          <Link href={"/"} className="my-button">
-            Get In Touch
-          </Link>
+          <Button href={"/"} position={undefined}>Get In Touch</Button>
           <div className={classes.reviews}>
             <div className={classes.review}>
               <Image src={clutch} alt="" />
