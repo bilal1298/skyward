@@ -4,7 +4,7 @@ import Image from "next/image";
 import banner from "../../public/websitedesign.png";
 import Button from "../UI/Button";
 
-const ServicesBanner = () => {
+const ServicesBanner = ({ title, desc, link, button }) => {
   const submitHandler = (e) => {
     e.preventDefault();
   };
@@ -12,14 +12,11 @@ const ServicesBanner = () => {
     <section className={`${classes.banner}`}>
       <div className={`container ${classes.banner}`}>
         <div className={classes.heroText}>
-          <h1>Web Design To Propel And Power Your Business Around Your Universe</h1>
-          <p>
-            Our web design service helps local businesses, service providers, and eCommerce website owners with substandard websites grow their leads, convert more clients and increase revenue.
-            <br />
-            <br />
-            We reimagine your website with cost-effective packages and transparent reporting to ignite your business.
-          </p>
-          <Button href={"/"}>Get In Touch</Button>
+          <h1>{title}</h1>
+
+          {desc}
+
+          <Button href={link}>{button}</Button>
         </div>
         <div className={classes.form}>
           <form onSubmit={submitHandler}>
