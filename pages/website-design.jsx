@@ -23,7 +23,7 @@ const websitedesign = () => {
           </p>
         }
         link={"/"}
-        button={'Get In Touch'}
+        button={"Get In Touch"}
       />
       <NumberStrip />
       <BriefService />

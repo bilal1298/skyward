@@ -16,15 +16,16 @@ export default function Home() {
       <Banner
         title={<h1>Skyrocket Business Growth and Fuel Your Revenue</h1>}
         desc={
-          <p>Skyward Digital is a full-service Melbourne-based digital marketing agency. Our crew of 
-          trusted flight commanders are on a mission to help businesses like yours. We find you 
-          the right traffic that delivers genuine leads and lands more customers. 
-          <br /><br />
-          We grow your business by designing digital marketing strategies and campaigns, 
-          including search engine optimisation (SEO), social media marketing, Google Ads, 
-          social ads, web design, email marketing and white-label services. 
-          <br /><br />
-          Get in touch today to receive a $2000 free audit of your website, let us help you unlock your business' potential!
+          <p>
+            Skyward Digital is a full-service Melbourne-based digital marketing agency. Our crew of trusted flight commanders are on a mission to help businesses like yours. We find you the right
+            traffic that delivers genuine leads and lands more customers.
+            <br />
+            <br />
+            We grow your business by designing digital marketing strategies and campaigns, including search engine optimisation (SEO), social media marketing, Google Ads, social ads, web design, email
+            marketing and white-label services.
+            <br />
+            <br />
+            Get in touch today to receive a $2000 free audit of your website, let us help you unlock your business' potential!
           </p>
         }
         heroImg={banner}
