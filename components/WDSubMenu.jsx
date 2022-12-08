@@ -11,7 +11,7 @@ const DMSubMenu = () => {
         </Link>
         <ul>
           <li>
-            <Link href="/">Wordpress</Link>
+            <Link href="/wordpress">Wordpress</Link>
           </li>
           <li>
             <Link href="/">Ecommerce</Link>
