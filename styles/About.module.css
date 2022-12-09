@@ -53,3 +53,25 @@
   font-size: 25px;
   letter-spacing: 2px;
 }
+
+.test{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test1{
+  width: 10px;
+  height: 100vh;
+  background-color: #fece1a;
+  position: relative;
+}
+
+.test2{
+  width: 100%;
+  position: absolute;
+  height: 0%;
+  background-color: aqua;
+}

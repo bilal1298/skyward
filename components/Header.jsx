@@ -7,6 +7,7 @@ import ServicesSub from "./ServicesSub";
 import Image from "next/image";
 import logo from "../public/illwhite.png";
 import { AnimatePresence, motion } from "framer-motion";
+import Button from "./UI/Button";
 
 const Header = (props) => {
   const [serviceActive, setServiceActive] = useState(false);

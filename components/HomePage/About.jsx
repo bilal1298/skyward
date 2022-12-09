@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import classes from "../../styles/About.module.css";
 import Section from "../UI/Section";
 import Button from "../UI/Button";
 import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const About = () => {
-  const [side, setSide] = useState("f");
+  // const ref = useRef();
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["end end", "start start"],
+  // });
+  // const y = useSpring(scrollYProgress);
   return (
     <Section padding={"70px 0"} background={"none"} title={"Australia’s Fastest Growing Digital Marketing Agency"}>
       <p className="subtitle">
@@ -21,6 +26,11 @@ const About = () => {
       <Button href={"/"} position={"center"}>
         Get In Touch
       </Button>
+      {/* <div className={classes.test} ref={ref}>
+        <div className={classes.test1} onClick={() => console.log(y.current)}>
+          <motion.div className={classes.test2} whileInView={{ height: scrollYProgress.current * 100 + "%" }}></motion.div>
+        </div>
+      </div> */}
       <h2 className="title" style={{ marginTop: "50px" }}>
         Our Services
       </h2>

@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <AnimatePresence mode="wait">
       <Head>
-        <meta name="custom meta" content="bilal shaikh" />
+      <meta name="theme-color" content="#002eff" />
       </Head>
       <motion.div
         initial="initialState"
