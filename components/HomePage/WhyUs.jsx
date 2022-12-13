@@ -19,24 +19,35 @@ const WhyUs = () => {
       <div className="row align-items-center" ref={ref}>
         <div className={`col-5 ${classes.images}`}>
           <motion.div whileInView={{ x: scrollYProgress.current * 130 + "%" }} className={classes.backImage}>
-            <Image src={moon}></Image>
+            <Image src={moon} alt=""/>
           </motion.div>
           <motion.div whileInView={{ y: -scrollYProgress.current * 10 + "%" }} className={classes.frontImage}>
-            <Image src={astronaut}></Image>
+            <Image src={astronaut} alt=""/>
           </motion.div>
         </div>
-        <div className="col-7">
-          <p className="subtitle">
-            Measurable Results: If you want to sky-rocket your business to the next level, you’ve found the right digital marketing agency for the job. We will collaborate with you to design a unique
-            approach that will assist you in achieving your objectives and generating profitable outcomes rather than just meaningless clicks and followers.
-            <br />
-            <br /> Transparent Reporting: We’ve developed state-of-the-art dashboards that pull in multi-channel data to keep you abreast of your campaigns’ progress. Our transparent reporting makes
-            it easier for you to trust that we are doing our jobs correctly because the proof is always just a click away.
-            <br />
-            <br /> Multi-channel Approach: Unlike most digital marketing agencies that focus on a singular approach to get leads, we’re different. We dive in deep to understand what drives your target
-            audience to convert or buy, and then target them through multiple channels to turn them into customers. Our integrated, focused strategies that involve SEO, PPC, social media advertising,
-            and content marketing have an illustrious track record of delivering superior results.
-          </p>
+        <div className={`${classes.whyUsContent} col-7`} style={{marginTop: '50px'}}>
+          <div>
+            <h3><strong>Measurable Results</strong></h3>
+            <p>
+              If you want to sky-rocket your business to the next level, you’ve found the right digital marketing agency for the job. We will collaborate with you to design a unique approach that will
+              assist you in achieving your objectives and generating profitable outcomes rather than just meaningless clicks and followers.
+            </p>
+          </div>
+          <div>
+            <h3><strong>Transparent Reporting</strong></h3>
+            <p>
+              We’ve developed state-of-the-art dashboards that pull in multi-channel data to keep you abreast of your campaigns’ progress. Our transparent reporting makes it easier for you to trust
+              that we are doing our jobs correctly because the proof is always just a click away.
+            </p>
+          </div>
+          <div>
+            <h3><strong>Multi-channel Approach</strong></h3>
+            <p>
+              Unlike most digital marketing agencies that focus on a singular approach to get leads, we’re different. We dive in deep to understand what drives your target audience to convert or buy,
+              and then target them through multiple channels to turn them into customers. Our integrated, focused strategies that involve SEO, PPC, social media advertising, and content marketing have
+              an illustrious track record of delivering superior results.
+            </p>
+          </div>
         </div>
       </div>
 

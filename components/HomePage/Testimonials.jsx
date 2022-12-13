@@ -72,7 +72,7 @@ const Testimonials = () => {
             </div>
             <div className={classes.imagesContainer}>
               <div className={classes.images}>
-                <Swiper className="testimonialSwiper" style={{ padding: "50px" }} modules={[Navigation]} spaceBetween={50} slidesPerView={3} navigation>
+                <Swiper className="testimonialSwiper" style={{ padding: "35px" }} modules={[Navigation]} spaceBetween={50} slidesPerView={3} navigation>
                   <SwiperSlide>
                     <div>
                       <Image className={`${currentTestimonial === 0 ? classes.active : undefined}`} onClick={() => setCurrentTestimonial(0)} src={profile} alt="" />

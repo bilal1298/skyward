@@ -1,5 +1,6 @@
 .images {
   position: relative;
+  margin-top: 50px;
 }
 
 .backImage {
@@ -9,4 +10,8 @@
 
 .frontImage img {
   max-width: 80%;
+}
+
+.whyUsContent div{
+  margin-bottom: 40px;
 }

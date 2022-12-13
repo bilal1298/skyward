@@ -10,7 +10,7 @@ const NumberStrip = () => {
         <div className="row">
           <div className="col-3">
             <h3>
-              <FontAwesomeIcon icon={faFaceSmile} size={"2x"} />
+              <FontAwesomeIcon icon={faFaceSmile} size={"2x"} color={'#002eff'}/>
               <br />
               <br />
               100+ <br /> Happy Clients
@@ -18,7 +18,7 @@ const NumberStrip = () => {
           </div>
           <div className="col-3">
             <h3>
-              <FontAwesomeIcon icon={faAward} size={"2x"} />
+              <FontAwesomeIcon icon={faAward} size={"2x"} color={'#002eff'}/>
               <br />
               <br />
               Award Winning <br /> Agency
@@ -26,7 +26,7 @@ const NumberStrip = () => {
           </div>
           <div className="col-3">
             <h3>
-              <FontAwesomeIcon icon={faHeadset} size={"2x"} />
+              <FontAwesomeIcon icon={faHeadset} size={"2x"} color={'#002eff'}/>
               <br />
               <br />
               After Hours <br /> Support
@@ -34,7 +34,7 @@ const NumberStrip = () => {
           </div>
           <div className="col-3">
             <h3>
-              <FontAwesomeIcon icon={faCheck} size={"2x"} />
+              <FontAwesomeIcon icon={faCheck} size={"2x"} color={'#002eff'}/>
               <br />
               <br />
               Guaranteed <br /> Results

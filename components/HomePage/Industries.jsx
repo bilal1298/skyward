@@ -18,10 +18,6 @@ import Button from "../UI/Button";
 const Industries = () => {
   return (
     <Section padding={"70px 0"} background={"none"} title={"Industries We Specialize In"}>
-      <p className="subtitle">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro neque vero natus incidunt temporibus cum odio delectus deserunt. Eligendi incidunt laboriosam ipsum libero rem deleniti
-        aspernatur itaque minima totam!
-      </p>
       <div className={classes.icons}>
         <div className={classes.icon}>
           <Image src={one} alt="" />
@@ -66,7 +62,9 @@ const Industries = () => {
           <p>Lorem Ipsum</p>
         </div>
       </div>
-      <Button href={'/'} position={'center'}>Get In Touch</Button>
+      <Button href={"/"} position={"center"}>
+        Get In Touch
+      </Button>
     </Section>
   );
 };

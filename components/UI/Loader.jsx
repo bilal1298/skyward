@@ -10,13 +10,13 @@ const Loader = () => {
     setLoading(false);
   }, 500);
   return (
-    <AnimatePresence mode="wait">
+    <>
       {loading && (
         <motion.div key={router.route} initial={{ x: "100vw" }} animate={{ x: 0 }} exit={{ x: "-100vw" }} transition={{ type: "stiff", duration: 0.3 }} className="loadingContainer">
-          <Image src={logo} />
+          <Image src={logo} alt=""/>
         </motion.div>
       )}
-    </AnimatePresence>
+    </>
   );
 };
 

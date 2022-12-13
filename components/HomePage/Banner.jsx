@@ -13,17 +13,17 @@ const Banner = ({ title, desc, heroImg, bg }) => {
           {title}
           {desc}
           <Button href={"/"} position={undefined}>Get In Touch</Button>
-          <div className={classes.reviews}>
+          {/* <div className={classes.reviews}>
             <div className={classes.review}>
               <Image src={clutch} alt="" />
             </div>
             <div className={classes.review}>
               <Image src={google} alt="" />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={classes.heroImage}>
-          <Image src={heroImg} alt="" />
+          <Image src={heroImg} alt="Banner" />
         </div>
       </div>
     </section>

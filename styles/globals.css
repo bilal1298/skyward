@@ -41,6 +41,10 @@ body {
   position: relative;
 }
 
+p{
+  font-size: 18px;
+}
+
 p.subtitle {
   text-align: center;
   margin: 40px 0 30px;
@@ -105,6 +109,30 @@ a {
   opacity: 0.1;
 }
 
+.testimonialSwiper .swiper-button-next{
+  right: 0;
+}
+
+.testimonialSwiper .swiper-button-prev{
+  left: 0;
+}
+
+.caseStudiesSwiper {
+  padding: 35px 50px !important;
+}
+
+.caseStudiesSwiper .swiper-button-next::after,
+.caseStudiesSwiper .swiper-button-prev::after {
+  font-size: 30px !important;
+  font-weight: bold !important;
+  color: #002eff !important;
+}
+
+.caseStudiesSwiper .swiper-button-next:hover::after,
+.caseStudiesSwiper .swiper-button-prev:hover::after {
+  color: #000 !important;
+}
+
 /*---------- Testimonial Swiper End ----------*/
 
 /*---------- Loader Style Start ----------*/
@@ -126,3 +154,9 @@ a {
 }
 
 /*---------- Loader Style End ----------*/
+
+@media(max-width:1200px){
+  .title{
+    font-size: 35px;
+  }
+}

@@ -17,16 +17,17 @@
 .heroText p {
   margin: 20px 0 30px;
   color: #fff;
+  font-size: 18px;
 }
 
-section.banner{
+section.banner {
   background-color: #99b4ff;
 }
 
 section.banner.bg {
-    background-image: url('../public/bannerBg.jpg');
-    background-position: center;
-    background-size: cover;
+  background-image: url("../public/bannerBg.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 div.banner {
@@ -42,25 +43,6 @@ div.banner {
   animation: floating 3s ease-in-out infinite;
 }
 
-.reviews {
-  display: flex;
-  margin-top: 35px;
-  width: 50%;
-}
-
-.review {
-  display: flex;
-  flex-direction: column;
-}
-
-.review img {
-  max-width: 90%;
-  background: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #1a58fe;
-}
-
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
@@ -70,5 +52,25 @@ div.banner {
   }
   100% {
     transform: translate(0, -0px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .heroText h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .heroText {
+    width: 100%;
+  }
+  .heroImage {
+    margin-top: 50px;
+    width: 70%;
   }
 }
