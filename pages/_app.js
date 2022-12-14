@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "../styles/globals.css";
-// import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css";
 import Layout from "../components/UI/Layout";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
