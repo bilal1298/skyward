@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-// import "../styles/globals.css";
-// import "bootstrap/dist/css/bootstrap.css";
+import "../styles/globals.css";
+import "bootstrap/dist/css/bootstrap.css";
 import Layout from "../components/UI/Layout";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import globalStyles from "../styles/global.js";
 
 function MyApp({ Component, pageProps }) {
   const [offset, setOffset] = useState(0);
@@ -37,12 +36,9 @@ function MyApp({ Component, pageProps }) {
           exitState: { clipPath: "polygon(0% 0, 0% 0, 0% 100%, 0% 100%)" },
         }}
       > */}
-      
+
       <Layout offset={offset}>
         <Component {...pageProps} />
-        <style jsx global>
-        {globalStyles}
-      </style>
       </Layout>
       {/* </motion.div> */}
     </>
