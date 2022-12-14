@@ -22,8 +22,8 @@ const routeChange = () => {
   tempFix();
 };
 
-Router.events.on("routeChangeComplete", routeChange);
 Router.events.on("routeChangeStart", routeChange);
+Router.events.on("routeChangeComplete", routeChange);
 
 function MyApp({ Component, pageProps }) {
   const [offset, setOffset] = useState(0);
