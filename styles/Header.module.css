@@ -89,8 +89,8 @@
   font-size: 30px;
 }
 
-.header.scrolled .hamIcon{
-  color: #002eff
+.header.scrolled .hamIcon {
+  color: #002eff;
 }
 
 @media (max-width: 1200px) {

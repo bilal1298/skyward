@@ -41,7 +41,7 @@ body {
   position: relative;
 }
 
-p{
+p {
   font-size: 18px;
 }
 
@@ -109,11 +109,11 @@ a {
   opacity: 0.1;
 }
 
-.testimonialSwiper .swiper-button-next{
+.testimonialSwiper .swiper-button-next {
   right: 0;
 }
 
-.testimonialSwiper .swiper-button-prev{
+.testimonialSwiper .swiper-button-prev {
   left: 0;
 }
 
@@ -155,8 +155,8 @@ a {
 
 /*---------- Loader Style End ----------*/
 
-@media(max-width:1200px){
-  .title{
+@media (max-width: 1200px) {
+  .title {
     font-size: 35px;
   }
 }
