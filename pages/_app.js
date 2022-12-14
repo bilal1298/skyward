@@ -20,11 +20,11 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   return (
-    <AnimatePresence mode="wait">
+    <>
       <Head>
         <meta name="theme-color" content="#002eff" />
       </Head>
-      <motion.div
+      {/* <motion.div
         initial="initialState"
         animate="animateState"
         exit="exitState"
@@ -35,12 +35,12 @@ function MyApp({ Component, pageProps }) {
           animateState: { opacity: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" },
           exitState: { clipPath: "polygon(0% 0, 0% 0, 0% 100%, 0% 100%)" },
         }}
-      >
-        <Layout offset={offset}>
-          <Component {...pageProps} />
-        </Layout>
-      </motion.div>
-    </AnimatePresence>
+      > */}
+      <Layout offset={offset}>
+        <Component {...pageProps} />
+      </Layout>
+      {/* </motion.div> */}
+    </>
   );
 }
 

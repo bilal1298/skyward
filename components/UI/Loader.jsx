@@ -1,23 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import logo from "../../public/illwhite.png";
-const Loader = () => {
-  const router = useRouter();
+const Loader = ({ route }) => {
   const [loading, setLoading] = useState(true);
-  setTimeout(() => {
-    setLoading(false);
-  }, 500);
+  useEffect(() => {
+    setLoading(true);
+  }, [route]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  }, [loading]);
   return (
-    <>
+    <AnimatePresence mode="wait">
       {loading && (
-        <motion.div key={router.route} initial={{ x: "100vw" }} animate={{ x: 0 }} exit={{ x: "-100vw" }} transition={{ type: "stiff", duration: 0.3 }} className="loadingContainer">
-          <Image src={logo} alt=""/>
+        <motion.div initial={{ x: "100vw" }} animate={{ x: 0 }} exit={{ x: "-100vw" }} transition={{ type: "stiff", duration: 0.3 }} className="loadingContainer">
+          <Image src={logo} alt="" />
         </motion.div>
       )}
-    </>
+    </AnimatePresence>
   );
 };
 
-export default Loader;
+export default memo(Loader);
