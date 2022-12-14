@@ -10,7 +10,7 @@ const Layout = (props) => {
     <React.Fragment>
       <Loader route={router.route}></Loader>
       <AnimatePresence>
-        <motion.div key={router.route}  exit={{ x: '-100vw' }} transition={{ duration: 0.5 }}>
+        <motion.div key={router.route}  exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
           <Header offset={props.offset} />
           <main>{props.children}</main>
           <Footer />
