@@ -3,24 +3,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import logo from "../../public/illwhite.png";
-const Loader = ({ route }) => {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setLoading(true);
-  }, [route]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 500);
-  }, [loading]);
+const Loader = () => {
   return (
     <AnimatePresence mode="wait">
-      {loading && (
-        <motion.div initial={{ x: "100vw" }} animate={{ x: 0 }} exit={{ x: "-100vw" }} transition={{ type: "stiff", duration: 0.3 }} className="loadingContainer">
-          <Image src={logo} alt="" />
-        </motion.div>
-      )}
+      <motion.div initial={{ x: "100vw" }} animate={{ x: 0 }} exit={{ x: "-100vw" }} transition={{ type: "stiff", duration: 0.3 }} className="loadingContainer">
+        <Image src={logo} alt="" />
+      </motion.div>
     </AnimatePresence>
   );
 };

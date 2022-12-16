@@ -2,28 +2,45 @@ import { useState, useEffect } from "react";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Layout from "../components/UI/Layout";
-import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Router from "next/router";
+import Loader from "../components/UI/Loader";
+import { motion, AnimatePresence } from "framer-motion";
 
-const routeChange = () => {
-  // Temporary fix to avoid flash of unstyled content
-  // during route transitions. Keep an eye on this
-  // issue and remove this code when resolved:
-  // https://github.com/vercel/next.js/issues/17464
+function Loading() {
+  const router = useRouter();
 
-  const tempFix = () => {
-    const allStyleElems = document.querySelectorAll('style[media="x"]');
-    allStyleElems.forEach((elem) => {
-      elem.removeAttribute("media");
-    });
-  };
-  tempFix();
-};
+  const [loading, setLoading] = useState(false);
 
-Router.events.on("routeChangeStart", routeChange);
-Router.events.on("routeChangeComplete", routeChange);
+  useEffect(() => {
+    const handleStart = (url) => url !== router.asPath && setLoading(true);
+    const handleComplete = (url) =>
+      url === router.asPath &&
+      setTimeout(() => {
+        setLoading(false);
+      }, 5000);
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+    };
+  });
+
+  return (
+    loading && (
+      <AnimatePresence>
+        <motion.div key={1} exit={{ x: "-100vw" }}>
+          <Loader />
+        </motion.div>
+      </AnimatePresence>
+    )
+  );
+}
 
 function MyApp({ Component, pageProps }) {
   const [offset, setOffset] = useState(0);
@@ -36,30 +53,16 @@ function MyApp({ Component, pageProps }) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const router = useRouter();
-
   return (
     <>
       <Head>
         <meta name="theme-color" content="#002eff" />
       </Head>
-      {/* <motion.div
-        initial="initialState"
-        animate="animateState"
-        exit="exitState"
-        key={router.route}
-        transition={{ duration: 0.3 }}
-        variants={{
-          initialState: { opacity: 0, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" },
-          animateState: { opacity: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" },
-          exitState: { clipPath: "polygon(0% 0, 0% 0, 0% 100%, 0% 100%)" },
-        }}
-      > */}
 
       <Layout offset={offset}>
+        <Loading />
         <Component {...pageProps} />
       </Layout>
-      {/* </motion.div> */}
     </>
   );
 }

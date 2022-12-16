@@ -1,9 +1,127 @@
-.footer{
-    min-height: 50vh;
-    background: #1d1d1d;
-    padding: 70px 0;
+.footer {
+  background: #1d1d1d;
+  padding: 70px 0;
 }
 
-.footer h2{
-    color: #fff;
+.footerRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 35%;
+  margin-right: 40px;
+}
+
+.logo img {
+  width: 70%;
+  margin-bottom: 40px;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.logo h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.contact {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact a {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.contact a:hover {
+  color: #fece1a;
+}
+
+.reviews {
+  width: 30%;
+  margin-right: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews img {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h3 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.form p {
+  color: #fff;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.form form {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #fece1a;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form input {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding-left: 10px;
+
+  height: 40px;
+}
+
+.form select {
+  width: 100%;
+  margin: 10px 0 20px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.form button {
+  padding: 10px 20px;
+  background-color: #002eff;
+  border: 2px solid #002eff;
+  color: #fff;
+  border-radius: 100px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.form button:hover {
+  background-color: #fece1a;
+  color: #1d1d1d !important;
+  border: 2px solid #000;
+}
+
+.sitemap {
+  margin: 50px 0;
+  border-top: 1px solid rgb(80, 80, 80);
 }
