@@ -7,7 +7,7 @@ import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
 import { faRotate, faBoltLightning, faMobile, faGaugeSimpleHigh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWordpress, faShopify, faWooCommerce, faMagento, faWix, faReact, faLaravel, faPhp } from "@fortawesome/free-brands-svg-icons";
+import { faWordpress, faShopify, faMagento, faWix, faReact, faLaravel, faPhp } from "@fortawesome/free-brands-svg-icons";
 
 const ecommerce = () => {
   const flipboxItems = [
@@ -26,7 +26,7 @@ const ecommerce = () => {
     {
       title: "Wix",
       desc: "Wix can help you deliver an exceptional customer experience by keeping up-to-date with customers’ orders on the go with their store mobile app.",
-      icon: faWooCommerce,
+      icon: faLaravel,
       href: "/woocommerce",
     },
     {

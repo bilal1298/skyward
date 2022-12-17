@@ -9,7 +9,7 @@ import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
 import { faRotate, faBoltLightning, faMobile, faGaugeSimpleHigh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWordpress, faShopify, faWooCommerce, faMagento, faWix, faReact, faLaravel, faPhp } from "@fortawesome/free-brands-svg-icons";
+import { faWordpress, faShopify,  faMagento, faWix, faReact, faLaravel, faPhp } from "@fortawesome/free-brands-svg-icons";
 
 const websitedesign = () => {
   const flipboxItems = [
@@ -28,7 +28,7 @@ const websitedesign = () => {
     {
       title: "Woocommerce",
       desc: "99% of all WordPress stores are run by WooCommerce. It’s great for beginners setting up eCommerce on their website as it’s easy to use and flexible",
-      icon: faWooCommerce,
+      icon: faLaravel,
       href: "/woocommerce",
     },
     {

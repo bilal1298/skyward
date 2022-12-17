@@ -7,7 +7,7 @@ import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
 import { faRotate, faBoltLightning, faMobile, faGaugeSimpleHigh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWordpress, faShopify, faWooCommerce, faMagento, faWix, faReact, faLaravel, faPhp } from "@fortawesome/free-brands-svg-icons";
+import { faWordpress, faShopify,  faMagento, faWix, faReact, faLaravel, faPhp } from "@fortawesome/free-brands-svg-icons";
 
 const business = () => {
   const flipboxItems = [
@@ -26,7 +26,7 @@ const business = () => {
     {
       title: "Law",
       desc: "When looking for a lawyer, most people start with Google. However, having a professional website with authoritative content, testimonials, and your professional background can lead to increased consultations.",
-      icon: faWooCommerce,
+      icon: faLaravel,
       href: "/woocommerce",
     },
     {

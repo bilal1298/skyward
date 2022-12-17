@@ -7,7 +7,7 @@ import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
 import { faRotate, faBoltLightning, faMobile, faGaugeSimpleHigh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWordpress, faShopify, faWooCommerce, faMagento, faWix, faReact, faLaravel, faPhp } from "@fortawesome/free-brands-svg-icons";
+import { faWordpress, faShopify, faMagento, faWix, faReact, faLaravel, faPhp } from "@fortawesome/free-brands-svg-icons";
 
 const health = () => {
   const flipboxItems = [
@@ -26,7 +26,7 @@ const health = () => {
     {
       title: "Chiropractors",
       desc: "Help your clients reach you faster with clickable phone numbers and straightforward appointment booking. And share how your treatments can assist with a comprehensive services page.",
-      icon: faWooCommerce,
+      icon: faLaravel,
       href: "/woocommerce",
     },
     {
