@@ -35,7 +35,7 @@ export default function Home() {
       <About />
       <TrustedBy />
       <WhyUs />
-      <Testimonials />
+      <Testimonials padding={"0 0 70px"}/>
       <CaseStudies />
       <Industries />
       <Blog />

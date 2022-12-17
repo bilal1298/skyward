@@ -13,4 +13,4 @@ const Loader = () => {
   );
 };
 
-export default memo(Loader);
+export default Loader;

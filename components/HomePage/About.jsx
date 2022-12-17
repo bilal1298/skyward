@@ -63,10 +63,7 @@ const About = () => {
         Get In Touch
       </Button>
 
-      <h2 className="title" style={{ marginTop: "50px" }}>
-        Our Services
-      </h2>
-      <FlipBox items={flipboxItems} />
+      <FlipBox title={'Our Services'} items={flipboxItems} />
     </Section>
   );
 };

@@ -14,7 +14,7 @@ const ServicesSub = (props) => {
       <div className={classes.menu}>
         <ul>
           <li className={activeMenu === "dm" ? classes.active : undefined} onMouseEnter={() => setActiveMenu("dm")}>
-            <Link href="/" className={classes.active}>
+            <Link href="/digital-marketing" className={classes.active}>
               Digital Marketing
             </Link>
           </li>

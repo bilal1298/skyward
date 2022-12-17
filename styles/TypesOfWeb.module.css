@@ -1,32 +1,18 @@
-.flipboxContainer1, .flipboxContainer2 {
+.typesOfWeb{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px
 }
 
-.flipboxContainer1{
-  margin: 50px 0 20px;
+.image{
+  width: 40%;
 }
 
-.flipboxContainer2{
-  margin-bottom: 50px;
+.content{
+  width: 50%;
 }
 
-.flipbox {
-  background-color: #fff;
-  box-shadow: 0 10px 30px 0 rgb(0 0 0 / 8%);
-  border-radius: 10px;
-  height: 300px;
-  width: 100%;
-  margin: 0 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px
-}
-
-.flipbox p{
-    margin: 20px;
-    text-align: center;
+.content > div{
+  margin-bottom: 30px;
 }

@@ -6,7 +6,7 @@ const DMSubMenu = () => {
   return (
     <div className={classes.menuItems}>
       <div>
-        <Link href="/" className={classes.menuItem}>
+        <Link href="/website-design" className={classes.menuItem}>
           Web Design
         </Link>
         <ul>
@@ -14,16 +14,16 @@ const DMSubMenu = () => {
             <Link href="/wordpress">Wordpress</Link>
           </li>
           <li>
-            <Link href="/">Ecommerce</Link>
+            <Link href="/ecommerce">Ecommerce</Link>
           </li>
           <li>
-            <Link href="/">Business & Services</Link>
+            <Link href="/business-and-services">Business & Services</Link>
           </li>
           <li>
-            <Link href="/">Education</Link>
+            <Link href="/education">Education</Link>
           </li>
           <li>
-            <Link href="/">Health Care</Link>
+            <Link href="/health-care">Health Care</Link>
           </li>
         </ul>
       </div>

@@ -21,45 +21,53 @@ const Industries = () => {
       <div className={classes.icons}>
         <div className={classes.icon}>
           <Image src={one} alt="" />
-          <p>Lorem Ipsum</p>
+          <p>Business</p>
         </div>
         <div className={classes.icon}>
           <Image src={two} alt="" />
-          <p>Lorem Ipsum</p>
+          <p>Education</p>
         </div>
         <div className={classes.icon}>
           <Image src={three} alt="" />
-          <p>Lorem Ipsum</p>
+          <p>Finance</p>
         </div>
         <div className={classes.icon}>
           <Image src={four} alt="" />
-          <p>Lorem Ipsum</p>
+          <p>Healthcare</p>
         </div>
         <div className={classes.icon}>
           <Image src={five} alt="" />
-          <p>Lorem Ipsum</p>
+          <p>Real Estate</p>
+        </div>
+        <div className={classes.icon}>
+          <Image src={five} alt="" />
+          <p>Insurance</p>
         </div>
       </div>
       <div className={classes.icons}>
         <div className={classes.icon}>
           <Image src={six} alt="" />
-          <p>Lorem Ipsum</p>
+          <p>Tech</p>
         </div>
         <div className={classes.icon}>
           <Image src={seven} alt="" />
-          <p>Lorem Ipsum</p>
+          <p>Automotive</p>
         </div>
         <div className={classes.icon}>
           <Image src={eight} alt="" />
-          <p>Lorem Ipsum</p>
+          <p>Dental</p>
         </div>
         <div className={classes.icon}>
           <Image src={nine} alt="" />
-          <p>Lorem Ipsum</p>
+          <p>Non-Profit</p>
         </div>
         <div className={classes.icon}>
           <Image src={ten} alt="" />
-          <p>Lorem Ipsum</p>
+          <p>Recruitment</p>
+        </div>
+        <div className={classes.icon}>
+          <Image src={ten} alt="" />
+          <p>Legal</p>
         </div>
       </div>
       <Button href={"/"} position={"center"}>

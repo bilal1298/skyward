@@ -38,10 +38,10 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+const Testimonials = ({padding}) => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   return (
-    <Section padding={"0 0 70px 0"} background={'none'} title={'Testimonials'}>
+    <Section padding={padding} background={'none'} title={'Testimonials'}>
       <div className={classes.testimonialsContainer}>
         <div className={classes.videos}>
           <div className={`${classes.video} ${classes.active}`}>

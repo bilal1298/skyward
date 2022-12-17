@@ -2,14 +2,52 @@ import React from "react";
 import ServicesBanner from "../components/ServicesPage/ServicesBanner";
 import NumberStrip from "../components/ServicesPage/NumberStrip";
 import BriefService from "../components/ServicesPage/BriefService";
-import Technologies from "../components/ServicesPage/Technologies";
+import FlipBox from "../components/ServicesPage/FlipBox";
 import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
-import Contact from "../components/HomePage/Contact";
 import { faRotate, faBoltLightning, faMobile, faGaugeSimpleHigh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWordpress, faShopify, faWooCommerce, faMagento, faWix, faReact, faLaravel, faPhp } from "@fortawesome/free-brands-svg-icons";
 
 const wordpress = () => {
+  const flipboxItems = [
+    {
+      title: "Custom WordPress Website Development ",
+      desc: "Tweak, change and customise your website to achieve the user experience you want to deliver. It’s an efficient and cost-effective way to build a unique website.",
+      icon: faWordpress,
+      href: "/wordpress",
+    },
+    {
+      title: "Theme Development",
+      desc: "Building a custom theme means lighting speeds to rank higher and boost traffic. In addition, your website has better security than off-shelf themes, which are frequent hacking targets.",
+      icon: faShopify,
+      href: "/shopify",
+    },
+    {
+      title: "WooCommerce Development",
+      desc: "You can easily and quickly reach your social media audience with WooCommerce. It’s simple to share new products and content, gliding them to your online store in one click.",
+      icon: faWooCommerce,
+      href: "/woocommerce",
+    },
+    {
+      title: "WP Plugin Development",
+      desc: "Give your WordPress site a rocket boost in performance with custom plug-ins. Avoid costly mistakes with sluggish performance and poor UX resulting in customers clicking off.",
+      icon: faMagento,
+      href: "/magento",
+    },
+    {
+      title: "Blog Development",
+      desc: "Showcase your experience and position your business as an authority with blogging. WP provides excellent flexibility, ease of use, and SEO to get found in search.",
+      icon: faWix,
+      href: "/wix",
+    },
+    {
+      title: "API Integration",
+      desc: "It opens up new galaxies to explore for your business. Such as creating a native mobile app or communicating with other apps universally.",
+      icon: faReact,
+      href: "/react",
+    },
+  ];
   return (
     <React.Fragment>
       <ServicesBanner
@@ -55,10 +93,20 @@ const wordpress = () => {
           </p>
         }
       />
-      <Technologies />
-      <Testimonials />
+      <FlipBox
+        items={flipboxItems}
+        title={"Tinker, Swap, and Modify Your WordPress Website To Build Your Mothership"}
+        desc={
+          <p className="subtitle">
+            Customising your WordPress website allows you to present your business online uniquely. For example, you may want to change your theme to improve site speed. Or you want to grow organic
+            traffic but need some support around setting up your blog. <br />
+            <br />
+            Our WordPress development services can help your business supercharge your website to grow revenue and boost your brand.
+          </p>
+        }
+      />
+      <Testimonials padding={"0 0 70px"}/>
       <CaseStudies />
-      <Contact />
     </React.Fragment>
   );
 };
