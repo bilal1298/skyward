@@ -12,7 +12,7 @@ import braze from "../public/braze.png";
 import marketo from "../public/marketo.png";
 import klaviyo from "../public/klaviyo.png";
 import sfmc from "../public/sfmc.png";
-import hubspot from "../public/hubspot.png";
+import hubspot from "../public/HubSpot.png";
 import classes from "../styles/pages.module.css";
 
 const flipboxItems = [
