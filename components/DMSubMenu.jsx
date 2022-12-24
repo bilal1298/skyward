@@ -1,47 +1,47 @@
 import React from "react";
-import classes from '../styles/ServicesSub.module.css'
+import classes from "../styles/ServicesSub.module.css";
 import Link from "next/link";
 
 const DMSubMenu = () => {
   return (
     <div className={classes.menuItems}>
       <div>
-        <Link href="/" className={classes.menuItem}>
+        <Link href="/seo" className={classes.menuItem}>
           SEO
         </Link>
         <ul>
           <li>
-            <Link href="/">Local SEO</Link>
+            <Link href="/local-seo">Local SEO</Link>
           </li>
           <li>
-            <Link href="/">Ecommerce SEO</Link>
+            <Link href="/ecommerce-seo">Ecommerce SEO</Link>
           </li>
           <li>
-            <Link href="/">National/Global SEO</Link>
+            <Link href="/national-global-seo">National/Global SEO</Link>
           </li>
         </ul>
       </div>
       <div>
-        <Link href="/" className={classes.menuItem}>
+        <Link href="/ppc" className={classes.menuItem}>
           PPC
         </Link>
         <ul>
           <li>
-            <Link href="/">Facebook Ads</Link>
+            <Link href="/facebook-ads">Facebook Ads</Link>
           </li>
           <li>
-            <Link href="/">Google Ads</Link>
+            <Link href="/google-ads">Google Ads</Link>
           </li>
           <li>
-            <Link href="/">LinkedIn Ads</Link>
+            <Link href="/linkedin-ads">LinkedIn Ads</Link>
           </li>
           <li>
-            <Link href="/">TikTok Ads</Link>
+            <Link href="/tiktok-ads">TikTok Ads</Link>
           </li>
         </ul>
       </div>
       <div>
-        <Link href="/" className={classes.menuItem}>
+        <Link href="/email-marketing" className={classes.menuItem}>
           Email Marketing
         </Link>
       </div>

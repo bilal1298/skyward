@@ -22,10 +22,10 @@ const ServicesSub = (props) => {
             <Link href="/website-design">Web Design</Link>
           </li>
           <li className={activeMenu === "wl" ? classes.active : undefined} onMouseEnter={() => setActiveMenu("wl")}>
-            <Link href="/">White Label</Link>
+            <Link href="/white-label">White Label</Link>
           </li>
           <li className={activeMenu === "d" ? classes.active : undefined} onMouseEnter={() => setActiveMenu("d")}>
-            <Link href="/">Design</Link>
+            <Link href="/design">Design</Link>
           </li>
         </ul>
       </div>

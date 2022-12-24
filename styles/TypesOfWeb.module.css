@@ -16,3 +16,7 @@
 .content > div{
   margin-bottom: 30px;
 }
+
+.content h3{
+  font-size: 22px;
+}

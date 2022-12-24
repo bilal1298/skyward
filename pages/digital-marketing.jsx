@@ -8,6 +8,8 @@ import CaseStudies from "../components/HomePage/CaseStudies";
 import Industries from "../components/HomePage/Industries";
 import { faRotate, faBoltLightning, faMobile, faGaugeSimpleHigh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Section from "../components/UI/Section";
+import Button from "../components/UI/Button";
 
 const digitalMarketing = () => {
   return (
@@ -52,7 +54,14 @@ const digitalMarketing = () => {
         }
       />
       <TrustedBy />
-      <Testimonials padding={'70px 0'}/>
+      <Section title={"Digital Marketing that will take you to new heights"} padding={"70px 0 0"}>
+        <p className="subtitle">
+          Skyward helps you stand out in a universe saturated with products and businesses. Our services are here to see you forge a unique identity and space within the market. We take time to
+          understand your business and goals and then propel you forward through laser-focused digital marketing strategies.
+        </p>
+        <Button href="/" position={'center'}>Get In Touch</Button>
+      </Section>
+      <Testimonials padding={"70px 0"} />
       <CaseStudies />
       <Industries />
     </React.Fragment>

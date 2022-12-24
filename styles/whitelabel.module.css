@@ -1,0 +1,115 @@
+.whiteLabelBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 150px;
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.whiteLabelBanner h1 {
+  font-family: "veronabold";
+  font-size: 44px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.whiteLabelBanner p {
+  font-size: 24px;
+  width: 50%;
+  margin: 40px auto 50px;
+}
+
+.whiteLabelBanner img:first-of-type {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+.whiteLabelBanner img:last-of-type {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+.partnerLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 0;
+}
+
+.partnerLogo img {
+  width: 20%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #fff;
+  filter: grayscale(1);
+}
+
+.partnerLogo img:hover {
+  filter: none;
+  box-shadow: 0 10px 30px 0 rgb(0 0 0 / 8%);
+}
+
+.industryBoxes,
+.whiteLabelBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 50px 0;
+}
+
+.industryBox {
+  width: 48%;
+  margin: 20px 10px;
+  background-color: #fff;
+  box-shadow: 0 0.3rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.industryBox img {
+  width: 50%;
+}
+
+.whiteLabelBox {
+  background-color: #fcfcfc;
+  box-shadow: 0 10px 30px 0 rgb(0 0 0 / 12%);
+  border-radius: 10px;
+  padding: 40px;
+  width: 23%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.whiteLabelBox h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.whiteLabelBox img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.revenueGoals{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.revenueGoals img{
+  width: 30%;
+}

@@ -7,44 +7,45 @@ import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
 import { faRotate, faBoltLightning, faMobile, faGaugeSimpleHigh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWordpress, faShopify, faMagento, faWix, faReact, faLaravel, faPhp } from "@fortawesome/free-brands-svg-icons";
+import astronaut from "../public/astronaut.png";
+import Boxes from "../components/UI/Boxes";
 
 const ecommerce = () => {
   const flipboxItems = [
     {
       title: "WooCommerce",
       desc: "Your online store needs a seamless checkout experience. WooCommerce focuses on reducing cart abandonment with features like guest checkout to deliver a successful sale.",
-      icon: faWordpress,
+      icon: astronaut,
       href: "/wordpress",
     },
     {
       title: "Shopify",
       desc: "You can use premade themes or create your own with Shopify, so you get your unique shop. An extensive app library allows for personalised experiences to help you stand out.",
-      icon: faShopify,
+      icon: astronaut,
       href: "/shopify",
     },
     {
       title: "Wix",
       desc: "Wix can help you deliver an exceptional customer experience by keeping up-to-date with customers’ orders on the go with their store mobile app.",
-      icon: faLaravel,
+      icon: astronaut,
       href: "/woocommerce",
     },
     {
       title: "Magento",
       desc: "Built with eCommerce in mind, Magento allows you to set up multiple payment gateways and currencies so you can sell no matter where your customers live.",
-      icon: faMagento,
+      icon: astronaut,
       href: "/magento",
     },
     {
       title: "BigCommerce",
       desc: "BigCommerce doesn’t think you need to be a rocket scientist to get started. With a simple drag and drop, create your store, and you can launch quickly.",
-      icon: faWix,
+      icon: astronaut,
       href: "/wix",
     },
     {
       title: "Squarespace",
       desc: "Squarespace offers stunning designs to build an online store. With fast checkout times, intuitive inventory management and no product limits, you’ll be up and away in no time.",
-      icon: faReact,
+      icon: astronaut,
       href: "/react",
     },
   ];
@@ -107,8 +108,9 @@ const ecommerce = () => {
           </p>
         }
       />
-      <Testimonials padding={"0 0 70px"}/>
+      <Testimonials padding={"0 0 70px"} />
       <CaseStudies />
+      <Boxes title={"Test"} padding={"70px 0"} background={"#DDE3FF"} items={flipboxItems} />
     </React.Fragment>
   );
 };

@@ -79,8 +79,8 @@ const Footer = () => {
               <input type="text" name="businessName" id="" placeholder="Business Name" required />
               <input type="email" name="email" id="" placeholder="Email" required />
               <input type="tel" name="phone" id="" placeholder="Phone Number" required />
-              <select name="service" id="" required>
-                <option value="" selected disabled>
+              <select name="service" id="" defaultValue={'DEFAULT'} required>
+                <option value="DEFAULT" disabled>
                   Service You’re Interested In
                 </option>
                 <option value="digitalMarketing">Digital Marketing</option>
