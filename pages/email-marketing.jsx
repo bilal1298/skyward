@@ -2,7 +2,6 @@ import React from "react";
 import ServicesBanner from "../components/ServicesPage/ServicesBanner";
 import NumberStrip from "../components/ServicesPage/NumberStrip";
 import Testimonials from "../components/HomePage/Testimonials";
-import CaseStudies from "../components/HomePage/CaseStudies";
 import Section from "../components/UI/Section";
 import astronaut from "../public/astronaut.png";
 import Image from "next/image";

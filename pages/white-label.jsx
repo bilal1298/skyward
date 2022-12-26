@@ -17,6 +17,7 @@ import wlseo from "../public/wlseo.png";
 import wlppc from "../public/wlppc.png";
 import wlweb from "../public/wlweb.png";
 import wlcontent from "../public/wlcontent.png";
+import Pricing from "../components/UI/Pricing";
 
 const whitelabel = () => {
   return (
@@ -162,7 +163,9 @@ const whitelabel = () => {
           TALK TO US
         </Button>
       </Section>
-      <Section title={<span className="titleBackground">Pricing</span>} padding={"70px 0"} background={"#fff"}></Section>
+      <Section title={<span className="titleBackground">Pricing</span>} padding={"70px 0"} background={"#fff"}>
+        <Pricing />
+      </Section>
       <Section
         title={
           <>
@@ -172,7 +175,9 @@ const whitelabel = () => {
         padding={"70px 0"}
       >
         <p style={{ width: "50%", margin: "50px auto", textAlign: "center", fontSize: "24px" }}>Our crew of trusted flight commanders are on a mission to help businesses like yours.</p>
-        <div className={classes.revenueGoals}><Image src={australia} alt="" /></div>
+        <div className={classes.revenueGoals}>
+          <Image src={australia} alt="" />
+        </div>
         <Button href="/" position={"center"}>
           See Results
         </Button>
