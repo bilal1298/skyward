@@ -4,9 +4,10 @@ import Button from "./Button";
 import classes from "../../styles/UI/Boxes.module.css";
 import Image from "next/image";
 
-const Boxes = ({ title, padding, background, items }) => {
+const Boxes = ({ title, padding, background, items, desc }) => {
   return (
     <Section title={title} padding={padding} background={background}>
+      {desc}
       <div className={classes.boxesContainer}>
         {items.map((i) => (
           <div className={classes.box} key={i.title}>
@@ -14,7 +15,7 @@ const Boxes = ({ title, padding, background, items }) => {
               <Image src={i.icon} alt="" />
               <h3>{i.title}</h3>
               <p>{i.desc}</p>
-              <Button href={i.href}>Learn More</Button>
+              {i.href && <Button href={i.href}>Learn More</Button>}
             </div>
           </div>
         ))}

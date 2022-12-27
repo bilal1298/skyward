@@ -99,22 +99,22 @@ const whitelabel = () => {
           <div className={classes.whiteLabelBox}>
             <h3>White Label SEO</h3>
             <Image src={wlseo} alt="" />
-            <Button href="/">Learn More</Button>
+            <Button href="/white-label-seo">Learn More</Button>
           </div>
           <div className={classes.whiteLabelBox}>
             <h3>White Label PPC</h3>
             <Image src={wlppc} alt="" />
-            <Button href="/">Learn More</Button>
+            <Button href="/white-label-ppc">Learn More</Button>
           </div>
           <div className={classes.whiteLabelBox}>
             <h3>White Label Web Design</h3>
             <Image src={wlweb} alt="" />
-            <Button href="/">Learn More</Button>
+            <Button href="/white-label-web-design">Learn More</Button>
           </div>
           <div className={classes.whiteLabelBox}>
             <h3>White Label Content Writing</h3>
             <Image src={wlcontent} alt="" />
-            <Button href="/">Learn More</Button>
+            <Button href="/white-label-content-writing">Learn More</Button>
           </div>
         </div>
       </Section>

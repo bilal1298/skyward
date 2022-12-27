@@ -1,6 +1,6 @@
 .boxesContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
   margin-top: 50px;

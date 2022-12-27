@@ -11,13 +11,13 @@ const DMSubMenu = () => {
         </Link>
         <ul>
           <li>
-            <Link href="/">Graphic Design</Link>
+            <Link href="/graphic-design">Graphic Design</Link>
           </li>
           <li>
-            <Link href="/">Logo Design</Link>
+            <Link href="/logo-design">Logo Design</Link>
           </li>
           <li>
-            <Link href="/">Content Writing</Link>
+            <Link href="/content-writing">Content Writing</Link>
           </li>
         </ul>
       </div>
