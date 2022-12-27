@@ -15,6 +15,7 @@ import strategy from "../public/strategy.png";
 import wlweb from "../public/wlweb.png";
 import Pricing from "../components/UI/Pricing";
 import FlipBox from "../components/ServicesPage/FlipBox";
+import Boxes from "../components/UI/Boxes";
 import astronaut from "../public/astronaut.png";
 import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
@@ -28,43 +29,36 @@ const whitelabelseo = () => {
       title: "SEO audit",
       desc: "Our 100% manual, actionable SEO audit will Identify issues and improvement opportunities for your clients that no tools can find. Get in-depth on-site audit reports in a palatable format that will enable you to prioritize your clients’ SEO optimization needs effectively.",
       icon: astronaut,
-      href: "/",
     },
     {
       title: "Local SEO",
       desc: "We create an integrated local SEO strategy for your clients using on-page optimization tactics, manual outreach, citation building and cleaning, review-earning techniques, and more. Let us enhance your local SEO services by drawing more attention to your clients on local search results and Google Maps.",
       icon: astronaut,
-      href: "/shopify",
     },
     {
       title: "Ecommerce",
       desc: "Get cutting edge eCommerce SEO solutions for online stores of all sizes. Our ecommerce SEO experts will help you increase your eCommerce SEO bandwidth through swift and effective strategies.",
       icon: astronaut,
-      href: "/woocommerce",
     },
     {
       title: "Global SEO",
       desc: "We improve your website’s global rankings making it both accessible and comprehensible to your target audience. This is achieved through employing a meticulously planned SEO process that includes industry-leading technical SEO best practices, a proprietary keyword research process, top-notch on site SOPs, and acquiring high authority links through manual outreach.",
       icon: astronaut,
-      href: "/woocommerce",
     },
     {
       title: "Content Marketing",
       desc: "Utilize our services to produce and distribute your clients’ content such as blogs, videos, podcasts, and other material to attract, retain, and grow an audience. When it's time to buy what you sell, people will think of your company first thanks to this strategy's promotion of brand awareness and establishment of competence.",
       icon: astronaut,
-      href: "/magento",
     },
     {
       title: "Citations",
       desc: "Business citations are crucial to your website’s local SEO success. We build relevance and prominence using high authority citations, and maximize their effectiveness by indexing them through our special strategy.",
       icon: astronaut,
-      href: "/wix",
     },
     {
       title: "Link Building",
       desc: "Integrate white hat link building techniques into your digital marketing strategy to increase your site's indexability, attract more relevant visitors, and strengthen brand recognition.",
       icon: astronaut,
-      href: "/wix",
     },
   ];
   return (
@@ -151,7 +145,7 @@ const whitelabelseo = () => {
         </Button>
       </Section>
 
-      <FlipBox
+      <Boxes
         items={flipboxItems}
         title={
           <>
@@ -159,7 +153,9 @@ const whitelabelseo = () => {
           </>
         }
         background={"#fff"}
+        padding={'70px 0'}
       />
+
       <Section title={<span className="titleBackground">Pricing</span>} padding={"70px 0"}>
         <Pricing />
       </Section>
