@@ -5,7 +5,7 @@ import Testimonials from "../components/HomePage/Testimonials";
 import Section from "../components/UI/Section";
 import astronaut from "../public/astronaut.png";
 import Image from "next/image";
-import FlipBox from "../components/ServicesPage/FlipBox";
+import Boxes from "../components/UI/Boxes";
 import mailchimp from "../public/mailchimp.png";
 import braze from "../public/braze.png";
 import marketo from "../public/marketo.png";
@@ -19,25 +19,21 @@ const flipboxItems = [
     title: "Database scraping",
     desc: "We provide an easy process to automate the collection of data, such as email addresses, and convert such information into easy access for your business. ",
     icon: astronaut,
-    href: "/wordpress",
   },
   {
     title: "Email template design",
     desc: "Whether you have a design you need to be coded or need us to construct and code a fresh design, we build attractive, user-friendly templates.",
     icon: astronaut,
-    href: "/shopify",
   },
   {
     title: "Email Campaign Management",
     desc: "Take the load off your shoulders. Our email campaign management encompasses the scheduling, reporting and execution of your campaign. We are there from start to finish.",
     icon: astronaut,
-    href: "/woocommerce",
   },
   {
     title: "Email operations support",
     desc: "Skyward is here to help you with every step of your journey with email operations support such as scheduling, production, reporting, delivery, analysis and execution.",
     icon: astronaut,
-    href: "/magento",
   },
 ];
 const emailmarketing = () => {
@@ -55,7 +51,7 @@ const emailmarketing = () => {
         button={"Get In Touch"}
       />
       <NumberStrip />
-      <FlipBox
+      <Boxes
         items={flipboxItems}
         title={"Stand out in a cluttered inbox"}
         desc={
@@ -64,6 +60,7 @@ const emailmarketing = () => {
             support. Here at Skyward, we get it. Mere visibility is not enough. We want to see you increase your revenue, growth, subscribers or loyal paying customers.
           </p>
         }
+        padding={"70px 0"}
       />
 
       <Section title={"Custom email templates compatible with 40+ email clients, including:"} padding={"70px 0"} background={"#dde3ff"}>

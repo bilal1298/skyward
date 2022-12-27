@@ -14,13 +14,21 @@ import nohogwash from "../public/nohogwash.png";
 import strategy from "../public/strategy.png";
 import wlweb from "../public/wlweb.png";
 import Pricing from "../components/UI/Pricing";
-import FlipBox from "../components/ServicesPage/FlipBox";
-import Boxes from "../components/UI/Boxes";
 import astronaut from "../public/astronaut.png";
 import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
+import googleads from "../public/google_ads.png";
+import microsoftads from "../public/microsoftads.png";
+import facebookads from "../public/facebookads.png";
+import instagramads from "../public/instagramads.png";
+import linkedinads from "../public/linkedinads.png";
+import tiktokads from "../public/tiktokads.png";
+import quoraads from "../public/quoraads.png";
+import goodfirms from "../public/goodfirms.png";
+import trustpilot from "../public/trustpilot.png";
+import clutch from "../public/clutchReview.png";
 
-const whitelabelseo = () => {
+const whitelabelweb = () => {
   const submitHandler = (e) => {
     e.preventDefault();
   };
@@ -29,36 +37,43 @@ const whitelabelseo = () => {
       title: "SEO audit",
       desc: "Our 100% manual, actionable SEO audit will Identify issues and improvement opportunities for your clients that no tools can find. Get in-depth on-site audit reports in a palatable format that will enable you to prioritize your clients’ SEO optimization needs effectively.",
       icon: astronaut,
+      href: "/",
     },
     {
       title: "Local SEO",
       desc: "We create an integrated local SEO strategy for your clients using on-page optimization tactics, manual outreach, citation building and cleaning, review-earning techniques, and more. Let us enhance your local SEO services by drawing more attention to your clients on local search results and Google Maps.",
       icon: astronaut,
+      href: "/shopify",
     },
     {
       title: "Ecommerce",
       desc: "Get cutting edge eCommerce SEO solutions for online stores of all sizes. Our ecommerce SEO experts will help you increase your eCommerce SEO bandwidth through swift and effective strategies.",
       icon: astronaut,
+      href: "/woocommerce",
     },
     {
       title: "Global SEO",
       desc: "We improve your website’s global rankings making it both accessible and comprehensible to your target audience. This is achieved through employing a meticulously planned SEO process that includes industry-leading technical SEO best practices, a proprietary keyword research process, top-notch on site SOPs, and acquiring high authority links through manual outreach.",
       icon: astronaut,
+      href: "/woocommerce",
     },
     {
       title: "Content Marketing",
       desc: "Utilize our services to produce and distribute your clients’ content such as blogs, videos, podcasts, and other material to attract, retain, and grow an audience. When it's time to buy what you sell, people will think of your company first thanks to this strategy's promotion of brand awareness and establishment of competence.",
       icon: astronaut,
+      href: "/magento",
     },
     {
       title: "Citations",
       desc: "Business citations are crucial to your website’s local SEO success. We build relevance and prominence using high authority citations, and maximize their effectiveness by indexing them through our special strategy.",
       icon: astronaut,
+      href: "/wix",
     },
     {
       title: "Link Building",
       desc: "Integrate white hat link building techniques into your digital marketing strategy to increase your site's indexability, attract more relevant visitors, and strengthen brand recognition.",
       icon: astronaut,
+      href: "/wix",
     },
   ];
   return (
@@ -67,12 +82,12 @@ const whitelabelseo = () => {
         <div className={`container-lg ${classes.heroContainer}`}>
           <div className={classes.heroText}>
             <h1 className="title">
-              <span className="titleBackground">Skyrocket</span> your client’s revenue and take all the glory with 100% discreet white label SEO services.
+              A White Label <span className="titleBackground">Web Design</span> Partner You Can Trust
             </h1>
             <br />
-            <p>Skyward’s hassle-free white label services enable agencies to scale up profitably.</p>
+            <p>Skyward’s hassle-free white label web design services enable agencies to scale up profitably.</p>
             <br />
-            <Button href={"/"}>EXPLORE PLANS & PRICING</Button>
+            <Button href={"/"}>See Our Plans & Pricing</Button>
           </div>{" "}
           <div className={classes.heroForm}>
             <div className={classes.form}>
@@ -94,7 +109,7 @@ const whitelabelseo = () => {
       <Section
         title={
           <>
-            Trusted By <span className="titleBackground">700+ Clients</span> Across The World
+            Trusted By <span className="titleBackground">500+ Clients</span> Across The World
           </>
         }
         padding={"70px 0"}
@@ -104,16 +119,15 @@ const whitelabelseo = () => {
           Supporting agencies from N. America and Europe to Asia and Australia in hundreds of industries and niches.
         </p>
         <div className={classes.partnerLogo}>
-          <Image src={meta} alt="" />
-          <Image src={microsoft} alt="" />
-          <Image src={tiktok} alt="" />
-          <Image src={google} alt="" />
+          <Image src={clutch} alt="" style={{ padding: "20px" }} />
+          <Image src={trustpilot} alt="" style={{ padding: "20px" }} />
+          <Image src={goodfirms} alt="" style={{ padding: "20px" }} />
         </div>
       </Section>
       <Section
         title={
           <>
-            Take your <span className="titleBackground">agency</span> to the next level. Score more wins with white label SEO.
+            Take your <span className="titleBackground">agency</span> to the next level. Score more wins with white label web design & development services.
           </>
         }
         padding={"70px 0"}
@@ -145,7 +159,7 @@ const whitelabelseo = () => {
         </Button>
       </Section>
 
-      <Boxes
+      {/* <FlipBox
         items={flipboxItems}
         title={
           <>
@@ -153,12 +167,27 @@ const whitelabelseo = () => {
           </>
         }
         background={"#fff"}
-        padding={'70px 0'}
-      />
-
-      <Section title={<span className="titleBackground">Pricing</span>} padding={"70px 0"}>
-        <Pricing />
+      /> */}
+      <Section
+        title={
+          <>
+            Our Seasoned Team of <span className="titleBackground">Web Designers & Developers</span> Can Help You With
+          </>
+        }
+        padding={"70px 0"}
+        background={"#fff"}
+      >
+        <div className={classes.adsLogo}>
+          <Image src={googleads} alt="" />
+          <Image src={microsoftads} alt="" />
+          <Image src={facebookads} alt="" />
+          <Image src={instagramads} alt="" />
+          <Image src={linkedinads} alt="" />
+          <Image src={quoraads} alt="" />
+          <Image src={tiktokads} alt="" />
+        </div>
       </Section>
+
       <Section
         title={
           <>
@@ -166,10 +195,9 @@ const whitelabelseo = () => {
           </>
         }
         padding={"70px 0"}
-        background={"#fff"}
       >
         <p style={{ width: "50%", margin: "50px auto", textAlign: "center", fontSize: "24px" }}>
-          Work with a fully-functional, fast-moving group of SEO experts that can move rapidly and achieve aggressive growth
+          Work with a fully-functional, fast-moving group of PPC experts that can move rapidly and achieve aggressive growth.
         </p>
         <div className={classes.revenueGoals}>
           <Image src={australia} alt="" />
@@ -178,6 +206,7 @@ const whitelabelseo = () => {
           See Results
         </Button>
       </Section>
+
       <Section
         padding={"70px 0"}
         title={
@@ -185,13 +214,14 @@ const whitelabelseo = () => {
             Getting started is as easy as <span className="titleBackground">A-B-C</span>
           </>
         }
+        background={"#fff"}
       >
         <div className={classes.abcContainer}>
           <div className={classes.abc}>
             <h2>1</h2>
             <h3>Title</h3>
             <p>
-              Our white label SEO services are designed to achieve authentic business growth. From creating high-volume links to impactful keyword optimisations, our SEO reseller service is thoroughly
+              Our white label website design & development services are designed to achieve authentic business growth. From onboarding to website launch, our web design reseller service is thoroughly
               scalable.
             </p>
             <Image src={wlweb} alt="" />
@@ -199,13 +229,16 @@ const whitelabelseo = () => {
           <div className={classes.abc}>
             <h2>2</h2>
             <h3>Hassle free onboarding</h3>
-            <p>Speak to one of our SEO experts, fill in our onboarding questionnaire and you’re all set to go!</p>
+            <p>Speak to one of our onboarding superstars, fill in our questionnaire and you’re all set to go!</p>
             <Image src={wlweb} alt="" />
           </div>
           <div className={classes.abc}>
             <h2>3</h2>
             <h3>Results-driven strategy</h3>
-            <p>With extensive experience across a diverse range of clients in both size and industry, our team of SEO experts know how to optimize your clients’ campaigns to get the best results.</p>
+            <p>
+              With extensive experience across a diverse range of clients in both size and industry, our team of website design & development experts know how to optimize your clients’ campaigns to
+              get the best results
+            </p>
             <Image src={wlweb} alt="" />
           </div>
         </div>
@@ -221,7 +254,6 @@ const whitelabelseo = () => {
           </>
         }
         padding={"70px 0"}
-        background={"#fff"}
       >
         <p style={{ width: "50%", margin: "50px auto", textAlign: "center", fontSize: "24px" }}>Agencies face many difficult dilemmas, but partnering with us shouldn't be one of them.</p>
         <div className={classes.industryBoxes}>
@@ -257,16 +289,15 @@ const whitelabelseo = () => {
           </div>
         </div>
         <Button href="/" position={"center"}>
-          TALK TO US
+          Let's Talk
         </Button>
       </Section>
-      <Section title={<span className="titleBackground">Pricing</span>} padding={"70px 0"}>
+      <Section title={<span className="titleBackground">Pricing</span>} padding={"70px 0"} background={"#fff"}>
         <Pricing />
       </Section>
-      <Testimonials padding={"70px 0"} background={"#fff"} />
-      <CaseStudies background={"#f6f6f6"} />
+      <Testimonials padding={"70px 0"} />
     </React.Fragment>
   );
 };
 
-export default whitelabelseo;
+export default whitelabelweb;

@@ -89,7 +89,7 @@
 
 .partnerLogo {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 50px 0 0;
 }
@@ -100,6 +100,7 @@
   border-radius: 10px;
   background: #fff;
   filter: grayscale(1);
+  margin: 0 20px;
 }
 
 .partnerLogo img:hover {

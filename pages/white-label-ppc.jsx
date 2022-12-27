@@ -25,7 +25,7 @@ import linkedinads from "../public/linkedinads.png";
 import tiktokads from "../public/tiktokads.png";
 import quoraads from "../public/quoraads.png";
 
-const whitelabelseo = () => {
+const whitelabelppc = () => {
   const submitHandler = (e) => {
     e.preventDefault();
   };
@@ -308,7 +308,7 @@ const whitelabelseo = () => {
         padding={"70px 0"}
        
       >
-        <p className="subtitle">Agencies face many difficult dilemmas, but partnering with us shouldn't be one of them.</p>
+        <p style={{ width: "50%", margin: "50px auto", textAlign: "center", fontSize: "24px" }}>Agencies face many difficult dilemmas, but partnering with us shouldn't be one of them.</p>
         <div className={classes.industryBoxes}>
           <div className={classes.industryBox}>
             <h3>Agency Growth</h3>
@@ -352,4 +352,4 @@ const whitelabelseo = () => {
   );
 };
 
-export default whitelabelseo;
+export default whitelabelppc;

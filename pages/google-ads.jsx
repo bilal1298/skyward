@@ -6,32 +6,28 @@ import CaseStudies from "../components/HomePage/CaseStudies";
 import Section from "../components/UI/Section";
 import astronaut from "../public/astronaut.png";
 import Image from "next/image";
-import FlipBox from "../components/ServicesPage/FlipBox";
+import Boxes from "../components/UI/Boxes";
 
 const flipboxItems = [
   {
     title: "Agency You Can Trust",
     desc: "Leave the details and execution to us. We’ll always keep you posted with transparent reporting.",
     icon: astronaut,
-    href: "/wordpress",
   },
   {
     title: "Unique Process",
     desc: "We’re constantly testing new strategies to best our previous numbers. As a result, we’re always scaling up your ads and never taking the back seat.",
     icon: astronaut,
-    href: "/shopify",
   },
   {
     title: "Google Ads Setup",
     desc: "We handle the entire setup, from account setup, tracking, copies, and landing page designs, so you don’t have to worry about any of the technical stuff.",
     icon: astronaut,
-    href: "/woocommerce",
   },
   {
     title: "Support",
     desc: "We’re just a tap away. With our Google Ads certified success managers and our after hours support team, you and your campaigns are never left unattended.",
     icon: astronaut,
-    href: "/magento",
   },
 ];
 const googleads = () => {
@@ -50,10 +46,11 @@ const googleads = () => {
         button={"Get In Touch"}
       />
       <NumberStrip />
-      <FlipBox
+      <Boxes
         items={flipboxItems}
         title={"Why Skyward Digital?"}
         desc={<p className="subtitle">Take your Google advertising ROI to the next level with comprehensive paid search growth strategies and superior management.</p>}
+        padding={'70px 0'}
       />
 
       <Section title={"Our Process"} padding={"70px 0"} background={"#dde3ff"}>
