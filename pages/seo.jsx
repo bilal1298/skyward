@@ -1,12 +1,10 @@
 import React from "react";
 import ServicesBanner from "../components/ServicesPage/ServicesBanner";
 import NumberStrip from "../components/ServicesPage/NumberStrip";
-import TrustedBy from "../components/HomePage/TrustedBy";
 import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
 import Industries from "../components/HomePage/Industries";
 import Section from "../components/UI/Section";
-import Button from "../components/UI/Button";
 import astronaut from "../public/astronaut.png";
 import Image from "next/image";
 import FlipBox from "../components/ServicesPage/FlipBox";
@@ -69,7 +67,7 @@ const seo = () => {
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
           <div className="col-6">
-            <h3>Local SEO</h3>
+            <h3 className="sbsTitle">Local SEO</h3>
             <p>
               Local SEO: Improve hyper-targeted traffic and acquire new customers with a local SEO campaign. Ideal for local businesses. Google Business Profile optimisation, citation building,
               content marketing, and link building.
@@ -78,7 +76,7 @@ const seo = () => {
         </div>
         <div className="row align-items-center">
           <div className="col-6">
-            <h3>E-commerce SEO</h3>
+            <h3 className="sbsTitle">E-commerce SEO</h3>
             <p>
               Our ecommerce SEO strategy is laser-focused on increasing your sales through technical enhancements, structured data markups, ongoing content strategy and our proprietary link building
               tactics.
@@ -93,18 +91,12 @@ const seo = () => {
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
           <div className="col-6">
-            <h3>National/International SEO</h3>
+            <h3 className="sbsTitle">National/International SEO</h3>
             <p>We specialise in multiregional and multilingual SEO strategies, allowing our clients to deliver engaging experiences for their target audience regardless of location or language.</p>
           </div>
         </div>
       </Section>
-      <FlipBox
-        items={flipboxItems}
-        title={"Our Process"}
-        desc={
-          ''
-        }
-      />
+      <FlipBox items={flipboxItems} title={"Our Process"} desc={""} />
       <Industries />
       <Testimonials padding={"0 0 70px"} />
       <CaseStudies />

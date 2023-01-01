@@ -20,6 +20,11 @@ const DMSubMenu = () => {
             <Link href="/national-global-seo">National/Global SEO</Link>
           </li>
         </ul>
+        <div style={{marginTop: '20px'}}>
+          <Link href="/email-marketing" className={classes.menuItem}>
+            Email Marketing
+          </Link>
+        </div>
       </div>
       <div>
         <Link href="/ppc" className={classes.menuItem}>
@@ -39,11 +44,6 @@ const DMSubMenu = () => {
             <Link href="/tiktok-ads">TikTok Ads</Link>
           </li>
         </ul>
-      </div>
-      <div>
-        <Link href="/email-marketing" className={classes.menuItem}>
-          Email Marketing
-        </Link>
       </div>
     </div>
   );

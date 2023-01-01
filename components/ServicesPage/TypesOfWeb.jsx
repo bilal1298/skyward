@@ -4,12 +4,16 @@ import Button from "../UI/Button";
 import classes from "../../styles/TypesOfWeb.module.css";
 import desktop from "../../public/desktop.png";
 import Image from "next/image";
+
 const TypesOfWeb = () => {
   return (
     <Section padding={"70px 0"} background={"#e9edff"} title={"Types of Websites We Build"}>
       <div className={classes.typesOfWeb}>
         <div className={classes.image}>
           <Image src={desktop} alt="" />
+          <Button href="/" position={"center"}>
+            Get In Touch
+          </Button>
         </div>
         <div className={classes.content}>
           <div>
@@ -43,7 +47,6 @@ const TypesOfWeb = () => {
             <p>Custom web design solutions for all types of healthcare institutions - including hospitals, clinics, dental practices, EHR companies, medical device companies, & more.</p>
           </div>
           <br />
-          <Button href="/">Get In Touch</Button>
         </div>
       </div>
     </Section>

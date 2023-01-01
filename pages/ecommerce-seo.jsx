@@ -1,15 +1,13 @@
 import React from "react";
 import ServicesBanner from "../components/ServicesPage/ServicesBanner";
 import NumberStrip from "../components/ServicesPage/NumberStrip";
-import TrustedBy from "../components/HomePage/TrustedBy";
 import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
 import Industries from "../components/HomePage/Industries";
-import Section from "../components/UI/Section";
-import Button from "../components/UI/Button";
 import astronaut from "../public/astronaut.png";
-import Image from "next/image";
 import FlipBox from "../components/ServicesPage/FlipBox";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ecommerceseo = () => {
   const flipboxItems = [
@@ -53,17 +51,39 @@ const ecommerceseo = () => {
   return (
     <React.Fragment>
       <ServicesBanner
-        title={"Cutting-Edge Ecommerce SEO Services To Grow Your Online Store’s Traffic & Sales"}
+        title={
+          <>
+            Cutting-Edge <br /> Ecommerce SEO Services To Grow Your Online Store’s Traffic & Sales
+          </>
+        }
         desc={
-          <p>
-            ✓ Comprehensive site audit <br />
-            ✓ Targeted keyword research for online stores <br />
-            ✓ Content marketing through your blog and other 3rd party platforms <br />
-            ✓ Ecommerce store optimisations for product pages, category pages, and more <br />
-            ✓ Technical SEO (site speed, mobile optimization, schema markup, etc.) <br />
-            ✓ Site structure optimisation <br />
-            ✓ High quality, manual link building <br />
-          </p>
+          <ul style={{ padding: "0", margin: "30px 0 40px" }}>
+            <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
+              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Comprehensive site audit
+            </li>
+            <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
+              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Targeted keyword research for online
+              stores
+            </li>
+            <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
+              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Content marketing through your blog and
+              other 3rd party platforms
+            </li>
+            <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
+              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Ecommerce store optimisations for
+              product pages, category pages, and more
+            </li>
+            <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
+              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Technical SEO (site speed, mobile
+              optimization, schema markup, etc.)
+            </li>
+            <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
+              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Site structure optimisation
+            </li>
+            <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
+              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> High quality, manual link building
+            </li>
+          </ul>
         }
         link={"/"}
         button={"Get In Touch"}
@@ -76,7 +96,7 @@ const ecommerceseo = () => {
       />
       <Industries />
       <Testimonials padding={"0 0 70px"} />
-      
+
       <CaseStudies />
     </React.Fragment>
   );

@@ -127,33 +127,33 @@ const whitelabel = () => {
         padding={"70px 0"}
       >
         <p className="subtitle">Agencies face many difficult dilemmas, but partnering with us shouldn't be one of them.</p>
-        <div className={classes.industryBoxes}>
-          <div className={classes.industryBox}>
+        <div className={classes.agencyBoxes}>
+          <div className={classes.agencyBox}>
             <h3>Agency Growth</h3>
             <p>Grow and scale your agency with our Australia-managed team, supercharged client support, and industry-leading SOPs.</p>
             <Image src={australia} alt="" />
           </div>
-          <div className={classes.industryBox}>
+          <div className={classes.agencyBox}>
             <h3>Client Growth</h3>
             <p>You'll receive the credit and be the hero to your clients with our behind-the-scenes work.</p>
             <Image src={seamless} alt="" />
           </div>
-          <div className={classes.industryBox}>
+          <div className={classes.agencyBox}>
             <h3>Full Support</h3>
             <p>Partnering with us provides you access to our full, Australia-managed team of leadership and specialists.</p>
             <Image src={nohogwash} alt="" />
           </div>
-          <div className={classes.industryBox}>
+          <div className={classes.agencyBox}>
             <h3>Stress Free</h3>
             <p>White label is a no brainer. No in-house hassles, training, raises, bonuses, benefits, taxes, or other headaches.</p>
             <Image src={strategy} alt="" />
           </div>
-          <div className={classes.industryBox}>
+          <div className={classes.agencyBox}>
             <h3>100% Discreet</h3>
             <p>We sign iron-clad NDAs with clients to ensure your peace of mind. Customer poaching is just not us.</p>
             <Image src={strategy} alt="" />
           </div>
-          <div className={classes.industryBox}>
+          <div className={classes.agencyBox}>
             <h3>Reporting Dashboards</h3>
             <p>Live, white labeled reporting dashboards to stay on top of all important metrics.</p>
             <Image src={strategy} alt="" />

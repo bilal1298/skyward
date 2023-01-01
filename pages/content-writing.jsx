@@ -61,11 +61,6 @@ const contentwriting = () => {
   ];
   const briefItems = [
     {
-      title: "Title",
-      desc: "Our reliable method for producing content writing that stirs readers and helps you achieve goals.",
-      icon: astronaut,
-    },
-    {
       title: "Prepare",
       desc: "We spend quality time understanding your goals and needs. We cultivate content strategy relevant to brand identity and desired outcomes. Preparation is where success begins.",
       icon: astronaut,
@@ -130,7 +125,12 @@ const contentwriting = () => {
         }
         padding={"70px 0"}
         items={briefItems}
-        background={'#EBF5FF'}
+        background={"#EBF5FF"}
+        desc={
+          <p className="subtitle">
+            Our reliable method for producing content writing that stirs readers and helps you achieve goals.
+          </p>
+        }
       />
 
       <Testimonials padding={"70px 0"} background={"#fff"} />

@@ -1,5 +1,5 @@
 .footer {
-  background: #1d1d1d;
+  background: #031254;
   padding: 70px 0;
 }
 
@@ -8,8 +8,14 @@
   justify-content: space-between;
 }
 
+.row1 {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .logo {
-  width: 35%;
+  width: 50%;
   margin-right: 40px;
 }
 
@@ -43,22 +49,52 @@
   color: #fece1a;
 }
 
+.quickLinks {
+  width: 40%;
+}
+
+.quickLinks h3{
+  color: #fff;
+  font-size: 25px;
+  font-family: 'veronabold';
+}
+
+.quickLinks ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.quickLinks li{
+  margin-bottom: 5px;
+}
+
+.quickLinks li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.quickLinks li a:hover{
+  color: #fece1a;
+}
+
 .reviews {
-  width: 30%;
+  width: 100%;
   margin-right: 40px;
   text-align: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .reviews img {
-  width: 50%;
-  margin-bottom: 30px;
+  width: 20%;
+  margin-right: 30px;
 }
 
 .form {
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,7 +114,7 @@
 .form form {
   border-radius: 10px;
   padding: 10px;
-  border: 1px solid #fece1a;
+  background-color: #f6f6f6;
   width: 90%;
   margin: 0 auto;
 }
@@ -87,9 +123,8 @@
   width: 100%;
   margin: 10px 0;
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: 1px solid gray;
   padding-left: 10px;
-
   height: 40px;
 }
 
@@ -97,7 +132,7 @@
   width: 100%;
   margin: 10px 0 20px;
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: 1px solid gray;
   height: 40px;
   padding-left: 10px;
 }

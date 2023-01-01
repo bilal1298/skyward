@@ -37,6 +37,12 @@ body {
   background-position: 0% 80%;
 }
 
+.sbsTitle{
+  font-size: 35px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
 /* .title::after {
   top: 5px;
   content: "";
@@ -150,7 +156,7 @@ a {
   z-index: 99;
   top: 0;
   left: 0;
-  background-color: #1d1d1d;
+  background-color: #031254;
   display: flex;
   justify-content: center;
   align-items: center;

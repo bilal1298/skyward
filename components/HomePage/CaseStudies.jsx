@@ -1,17 +1,17 @@
 import React from "react";
 import Section from "../UI/Section";
-import Button from "../UI/Button";
+import Link from "next/link";
 import classes from "../../styles/CaseStudies.module.css";
 import { Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const CaseStudies = () => {
+const CaseStudies = ({ background }) => {
   return (
-    <Section padding={"70px 0"} background={"#fece1a"} title={"Case Studies"}>
+    <Section padding={"70px 0"} background={background ? background : "#002eff"} title={<>Case <span className="titleBackground">Studies</span></>} color={"#fff"}>
       <Swiper
-        className='caseStudiesSwiper'
+        className="caseStudiesSwiper"
         style={{ padding: "35px" }}
         modules={[Navigation, Autoplay]}
         spaceBetween={50}
@@ -45,7 +45,9 @@ const CaseStudies = () => {
                 officiis officia voluptates, excepturi facere eaque amet laudantium.
               </p>
             </div>
-            <Button href="/">Read More</Button>
+            <Link className={classes.readMore} href="/">
+              Read More
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -59,7 +61,9 @@ const CaseStudies = () => {
                 officiis officia voluptates, excepturi facere eaque amet laudantium.
               </p>
             </div>
-            <Button href="/">Read More</Button>
+            <Link className={classes.readMore} href="/">
+              Read More
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -73,7 +77,9 @@ const CaseStudies = () => {
                 officiis officia voluptates, excepturi facere eaque amet laudantium.
               </p>
             </div>
-            <Button href="/">Read More</Button>
+            <Link className={classes.readMore} href="/">
+              Read More
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -87,7 +93,9 @@ const CaseStudies = () => {
                 officiis officia voluptates, excepturi facere eaque amet laudantium.
               </p>
             </div>
-            <Button href="/">Read More</Button>
+            <Link className={classes.readMore} href="/">
+              Read More
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -101,7 +109,9 @@ const CaseStudies = () => {
                 officiis officia voluptates, excepturi facere eaque amet laudantium.
               </p>
             </div>
-            <Button href="/">Read More</Button>
+            <Link className={classes.readMore} href="/">
+              Read More
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -115,7 +125,9 @@ const CaseStudies = () => {
                 officiis officia voluptates, excepturi facere eaque amet laudantium.
               </p>
             </div>
-            <Button href="/">Read More</Button>
+            <Link className={classes.readMore} href="/">
+              Read More
+            </Link>
           </div>
         </SwiperSlide>
       </Swiper>

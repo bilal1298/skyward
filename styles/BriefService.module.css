@@ -1,6 +1,6 @@
 section.briefService {
   background: #f6f6f6;
-  padding: 70px 0;
+  padding: 100px 0 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,12 +14,12 @@ div.briefService,
 }
 
 .tabs {
-  width: 50%;
+  width: 60%;
   margin-right: 30px;
 }
 
 .desc {
-  width: 50%;
+  width: 40%;
   margin-left: 30px;
   text-align: center;
 }
@@ -43,7 +43,7 @@ div.briefService,
 .tab3 {
   width: 100%;
   height: 300px;
-  background-color: #fece1a;
+  background-color: #fff;
   color: #1d1d1d;
   padding: 20px;
   margin-bottom: 20px;
@@ -59,7 +59,7 @@ div.briefService,
 .tab4 {
   width: 100%;
   height: 300px;
-  background-color: #fece1a;
+  background-color: #fff;
   color: #1d1d1d;
   padding: 20px;
   border-radius: 10px;

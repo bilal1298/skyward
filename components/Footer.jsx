@@ -18,59 +18,80 @@ const Footer = () => {
     <footer className={`${classes.footer}`}>
       <div className="container-lg">
         <div className={classes.footerRow}>
-          <div className={classes.logo}>
-            <Image src={logo} alt="" />
-            <h3>Follow/Connect</h3>
-            <div className={classes.socialIcons}>
-              <Link href="/">
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  style={{ color: "#002eff", marginRight: "20px", backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px", textAlign: "center" }}
-                />
-              </Link>
-              <Link href="/">
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  style={{ color: "#002eff", marginRight: "20px", backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px", textAlign: "center" }}
-                />
-              </Link>
-              <Link href="/">
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  style={{ color: "#002eff", marginRight: "20px", backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px", textAlign: "center" }}
-                />
-              </Link>
-              <Link href="/">
-                <FontAwesomeIcon
-                  icon={faYoutube}
-                  style={{ color: "#002eff", marginRight: "20px", backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px", textAlign: "center" }}
-                />
-              </Link>
-              <Link href="/">
-                <FontAwesomeIcon
-                  icon={faTwitter}
-                  style={{ color: "#002eff", marginRight: "20px", backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px", textAlign: "center" }}
-                />
-              </Link>
+          <div className={classes.row1}>
+            <div className={classes.logo}>
+              <Image src={logo} alt="" />
+              <h3>Follow/Connect</h3>
+              <div className={classes.socialIcons}>
+                <Link href="/">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    style={{ color: "#002eff", marginRight: "20px", backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px", textAlign: "center" }}
+                  />
+                </Link>
+                <Link href="/">
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    style={{ color: "#002eff", marginRight: "20px", backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px", textAlign: "center" }}
+                  />
+                </Link>
+                <Link href="/">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    style={{ color: "#002eff", marginRight: "20px", backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px", textAlign: "center" }}
+                  />
+                </Link>
+                <Link href="/">
+                  <FontAwesomeIcon
+                    icon={faYoutube}
+                    style={{ color: "#002eff", marginRight: "20px", backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px", textAlign: "center" }}
+                  />
+                </Link>
+                <Link href="/">
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    style={{ color: "#002eff", marginRight: "20px", backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px", textAlign: "center" }}
+                  />
+                </Link>
+              </div>
+              <div className={classes.contact}>
+                <Link href="mailto:contact@skyward.com">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                  &nbsp; contact@skyward.com
+                </Link>
+                <Link href="tel:9876543210">
+                  <FontAwesomeIcon icon={faPhone} />
+                  &nbsp; 9876543210
+                </Link>
+              </div>
             </div>
-            <div className={classes.contact}>
-              <Link href="mailto:contact@skyward.com">
-                <FontAwesomeIcon icon={faEnvelope} />
-                &nbsp; contact@skyward.com
-              </Link>
-              <Link href="tel:9876543210">
-                <FontAwesomeIcon icon={faPhone} />
-                &nbsp; 9876543210
-              </Link>
+            <div className={classes.quickLinks}>
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <Link href="/">Digital Maketing</Link>
+                </li>
+                <li>
+                  <Link href="/">Social Media Marketing</Link>
+                </li>
+                <li>
+                  <Link href="/">SEO</Link>
+                </li>
+                <li>
+                  <Link href="/">PPC</Link>
+                </li>
+                <li>
+                  <Link href="/">Website Design</Link>
+                </li>
+              </ul>
+            </div>
+            <div className={classes.reviews}>
+              <Image src={clutch} alt="" />
+              <Image src={google} alt="" />
+              <Image src={clutch} alt="" />
+              <Image src={google} alt="" />
             </div>
           </div>
-          <div className={classes.reviews}>
-            <Image src={clutch} alt="" />
-            <Image src={google} alt="" />
-            <Image src={clutch} alt="" />
-            <Image src={google} alt="" />
-          </div>
-
           <div className={classes.form}>
             <h3 className="title">Let's Sky-rocket Your Business</h3>
             <p>100% Transparency, No BS, No dodgy stuff. Just pure results.</p>
@@ -79,7 +100,7 @@ const Footer = () => {
               <input type="text" name="businessName" id="" placeholder="Business Name" required />
               <input type="email" name="email" id="" placeholder="Email" required />
               <input type="tel" name="phone" id="" placeholder="Phone Number" required />
-              <select name="service" id="" defaultValue={'DEFAULT'} required>
+              <select name="service" id="" defaultValue={"DEFAULT"} required>
                 <option value="DEFAULT" disabled>
                   Service You’re Interested In
                 </option>
@@ -96,10 +117,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className={classes.sitemap}>
-          
-
-        </div>
+        <div className={classes.sitemap}></div>
       </div>
     </footer>
   );

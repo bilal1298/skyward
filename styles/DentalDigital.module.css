@@ -2,9 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0 150px;
-  padding-top: 150px;
-  text-align: center;
+  padding: 150px 0;
+  text-align: left;
   position: relative;
   background-color: #8ea2ff;
 }
@@ -19,8 +18,17 @@
   width: 45%;
 }
 
-.heroForm {
+.heroImage {
   width: 45%;
+}
+
+.heroImage img {
+  transform: rotateY(180deg);
+}
+
+.heroForm {
+  margin-top: 50px;
+  width: 80%;
 }
 
 .form {
@@ -29,7 +37,7 @@
   align-items: center;
   background-color: #fff;
   border-radius: 15px;
-  padding: 40px 20px;
+  padding: 20px;
   box-shadow: 0 10px 30px 0 rgb(0 0 0 / 12%);
 }
 
@@ -38,7 +46,7 @@
 }
 
 .form p {
-  margin: 20px 0;
+  margin: 10px 0;
   text-align: center;
 }
 
@@ -139,32 +147,6 @@
   width: 50%;
 }
 
-.agencyBoxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  margin: 50px 0;
-}
-
-.agencyBox {
-  width: 30%;
-  margin: 15px 10px;
-  background-color: #fff;
-  box-shadow: 0 10px 30px 0 rgb(0 0 0 / 12%);
-  padding: 40px;
-  text-align: center;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.agencyBox img {
-  width: 70%;
-}
-
 .whiteLabelBox {
   background-color: #fcfcfc;
   box-shadow: 0 10px 30px 0 rgb(0 0 0 / 12%);
@@ -209,7 +191,7 @@
   padding: 40px;
   background-color: white;
   border-radius: 15px;
-  width: 32%;
+  width: 24%;
   box-shadow: 0 10px 30px 0 rgb(0 0 0 / 12%);
   display: flex;
   flex-direction: column;
@@ -219,20 +201,19 @@
 }
 
 .abc h3 {
-  font-family: "veronabold";
+  font-size: 24px;
 }
 
 .abc h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #002eff;
-  color: #fff;
-  border-radius: 50%;
+  background-color: #fece1a;
+  color: #000;
   font-size: 25px;
   margin-bottom: 30px;
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 
 .abc p {
@@ -264,4 +245,88 @@
 .adsLogo img:hover {
   filter: none;
   box-shadow: 0 10px 30px 0 rgb(0 0 0 / 8%);
+}
+
+.testimonials {
+  padding: 50px !important;
+  margin-top: 10px;
+}
+
+.caseStudy {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: grab;
+}
+
+.title {
+  height: 300px;
+  width: 100%;
+  background-image: url("/caseStudy.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 50%);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 0 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.title h3 {
+  color: #fff;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial .image {
+  width: 100px;
+  height: 100px;
+  background: #abbaff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+.testimonial .image img {
+  width: 80%;
+}
+
+.testimonial h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.testimonial h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.noBrainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 50px 0;
+}
+
+.noBrainer .item{
+  width: 24%;
+  text-align: center;
+}
+
+.noBrainer .item img{
+  width: 40%;
+  margin-bottom: 20px;
 }

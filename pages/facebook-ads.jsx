@@ -80,13 +80,13 @@ const facebookads = () => {
         button={"Get In Touch"}
       />
       <NumberStrip />
-      <Section title={"What We Can Do For You"} padding={"70px 0"} background={"#dde3ff"}>
+      <Section title={<>What We Can Do For <span className="titleBackground">You</span></>} padding={"70px 0"} background={"#dde3ff"}>
         <div className="row align-items-center" style={{ marginTop: "70px" }}>
           <div className="col-6 text-center">
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
           <div className="col-6">
-            <h3>Lead Generation</h3>
+            <h3 className="sbsTitle">Lead Generation</h3>
             <p>
               We work hard to get you the highest quality leads through focused ad targeting and compelling copies. We constantly test new strategies and make data driven optimisations to ensure that
               we are always squeezing out the last drop of value for your ad spend.
@@ -95,7 +95,7 @@ const facebookads = () => {
         </div>
         <div className="row align-items-center">
           <div className="col-6">
-            <h3>Retargeting</h3>
+            <h3 className="sbsTitle">Retargeting</h3>
             <p>
               We start by priming your target audience with engaging ads. Then, we time our strike perfectly when they’re in “buying mode” and show them meticulously crafted ads that they just can’t
               scroll through. Moreover, our ingenious cross-platform retargeting strategies are known to convert at significantly higher rates than industry standards.
@@ -110,7 +110,7 @@ const facebookads = () => {
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
           <div className="col-6">
-            <h3>Ecommerce</h3>
+            <h3 className="sbsTitle">Ecommerce</h3>
             <p>
               Skyward Digital’s ecommerce Facebook ads management has always been a step ahead of the competition through a process that is agile, effective and data-driven.Regardless of your niche,
               we’re committed to deliver a profitable ROI for your online store.
@@ -118,7 +118,7 @@ const facebookads = () => {
           </div>
         </div>
       </Section>
-      <Boxes items={flipboxItems} title={"Types of Ads We Run"} desc={""} padding={'70px 0'} />
+      <Boxes items={flipboxItems} title={<>Types of <span className="titleBackground">Ads</span> We Run</>} desc={""} padding={'70px 0'} href={'/'} />
       <Testimonials padding={"70px 0"} background={'#fff'} />
       <CaseStudies />
     </React.Fragment>

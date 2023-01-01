@@ -1,7 +1,7 @@
 section.banner {
   min-height: 100vh;
   background-color: /*#b3c0ff*/ #99b4ff;
-  background-image: url("../public/bannerBg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../public/bannerBg.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -14,7 +14,8 @@ div.banner {
 }
 
 .heroText {
-  width: 45%;
+  width: 60%;
+  margin-right: 70px;
 }
 
 .heroText h1 {
@@ -28,34 +29,8 @@ div.banner {
   margin: 20px 0 30px;
 }
 
-/* .form {
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 10px 30px 0 rgb(0 0 0 / 8%);
-  width: 45%;
-}
-
-.inputGroup {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.formGroup {
-  width: 100%;
-  margin: 0 5px;
-}
-
-.formGroup textarea {
-  height: 100px;
-}
-
-.inputButton {
-  margin-top: 20px;
-} */
 .heroForm {
-  width: 45%;
+  width: 35%;
 }
 
 .form {
@@ -80,7 +55,6 @@ div.banner {
 .form form {
   border-radius: 10px;
   padding: 10px;
-  border: 1px solid #002eff;
   margin: 0 auto;
 }
 
@@ -88,7 +62,7 @@ div.banner {
   width: 100%;
   margin: 10px 0;
   border-radius: 5px;
-  border: 1px solid #002eff;
+  border: 1px solid gray;
   padding-left: 10px;
 
   height: 40px;
@@ -114,6 +88,7 @@ div.banner {
   text-transform: uppercase;
   font-size: 14px;
   transition: 0.3s ease-in-out;
+  margin-top: 20px;
 }
 
 .form button:hover {

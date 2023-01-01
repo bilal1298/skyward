@@ -4,7 +4,7 @@ import Button from "./Button";
 import classes from "../../styles/UI/Boxes.module.css";
 import Image from "next/image";
 
-const Boxes = ({ title, padding, background, items, desc }) => {
+const Boxes = ({ title, padding, background, items, desc, href }) => {
   return (
     <Section title={title} padding={padding} background={background}>
       {desc}
@@ -20,6 +20,13 @@ const Boxes = ({ title, padding, background, items, desc }) => {
           </div>
         ))}
       </div>
+      {href && (
+        <div style={{marginTop: '50px'}}>
+          <Button href={href} position={"center"}>
+            Get In Touch
+          </Button>
+        </div>
+      )}
     </Section>
   );
 };

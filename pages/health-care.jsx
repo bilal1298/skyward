@@ -60,10 +60,8 @@ const health = () => {
         title={"Discover Healthcare and Hospital Websites That Position You as an Authority in the Medical Universe"}
         desc={
           <p>
-            Are you looking to grow your practice as a trusted medical professional?
-            <br />
-            <br />
-            A healthcare website that helps your local community find valuable and helpful information about symptoms, treatments and likely outcomes.
+            Are you looking to grow your practice as a trusted medical professional? A healthcare website that helps your local community find valuable and helpful information about symptoms,
+            treatments and likely outcomes.
             <br />
             <br />
             Skyward Digital has been building healthcare websites as part of an overall marketing strategy that helps patients and clients get relevant information quickly.
@@ -93,23 +91,23 @@ const health = () => {
         desc={
           <div style={{ margin: "40px 0", textAlign: "left" }}>
             <div style={{ marginBottom: "25px" }}>
-              <h3 style={{ color: "#002eff" }}>Communicates</h3>
+              <h3>Communicates</h3>
               <p>Your organisation’s voice, products and services, and mission.</p>
             </div>
             <div style={{ marginBottom: "25px" }}>
-              <h3 style={{ color: "#002eff" }}>Interactive features</h3>
+              <h3>Interactive features</h3>
               <p>for messaging and data exchange.</p>
             </div>
             <div style={{ marginBottom: "25px" }}>
-              <h3 style={{ color: "#002eff" }}>Appeals</h3>
+              <h3>Appeals</h3>
               <p>to both existing and prospective users.</p>
             </div>
             <div style={{ marginBottom: "25px" }}>
-              <h3 style={{ color: "#002eff" }}>Discoverable</h3>
+              <h3>Discoverable</h3>
               <p>by prospective users through search engines.</p>
             </div>
             <div style={{ marginBottom: "25px" }}>
-              <h3 style={{ color: "#002eff" }}> Complies</h3>
+              <h3> Complies</h3>
               <p>with all applicable security and regulatory standards – including HIPAA, ADA, GDPR, and CCPA.</p>
             </div>
           </div>
@@ -131,7 +129,7 @@ const health = () => {
           </p>
         }
       />
-      <Testimonials padding={"0 0 70px"}/>
+      <Testimonials padding={"0 0 70px"} />
       <CaseStudies />
     </React.Fragment>
   );

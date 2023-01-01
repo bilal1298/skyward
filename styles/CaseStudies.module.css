@@ -19,10 +19,32 @@
   padding: 0 0 0 10px;
   border-radius: 10px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .title h3 {
   color: #fff;
 }
 
+.content p{
+  color: #fff;
+}
 
+.readMore {
+  padding: 10px 20px;
+  background-color: #fece1a;
+  border: 2px solid #fece1a;
+  color: #000;
+  border-radius: 100px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.readMore:hover {
+  background-color: #002eff;
+  color: #fece1a !important;
+  border: 2px solid #fece1a;
+}

@@ -15,9 +15,9 @@ import ten from "../../public/10.svg";
 import Section from "../UI/Section";
 import Button from "../UI/Button";
 
-const Industries = () => {
+const Industries = ({background}) => {
   return (
-    <Section padding={"70px 0"} background={"none"} title={"Industries We Specialize In"}>
+    <Section padding={"70px 0"} background={background} title={"Industries We Specialize In"}>
       <div className={classes.icons}>
         <div className={classes.icon}>
           <Image src={one} alt="" />

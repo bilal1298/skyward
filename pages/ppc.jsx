@@ -76,24 +76,24 @@ const ppc = () => {
       />
       <NumberStrip />
       <FlipBox items={flipboxItems} title={"Our Seasoned Team of PPC Experts Can Help You With"} desc={""} />
-      <Industries />
-      <Testimonials padding={"0 0 70px"} />
-      <Section title={"Our Process"} padding={"70px 0"} background={"#dde3ff"}>
+      <Industries background={'#fff'}/>
+      <Testimonials padding={"70px 0"} />
+      <Section title={<>Our <span className="titleBackground">Process</span></>} padding={"70px 0"} background={"#dde3ff"}>
         <div className="row align-items-center" style={{ marginTop: "70px" }}>
           <div className="col-6 text-center">
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
           <div className="col-6">
-            <h3>Identify Goals</h3>
+            <h3 className="sbsTitle">Identify Goals</h3>
             <p>Everything we do is focused on maximising your ROI. We identify goals, evaluate historical data, and create a clear plan during our initial evaluation.</p>
             <br />
-            <h3>Setup Tracking</h3>
+            <h3 className="sbsTitle">Setup Tracking</h3>
             <p>All of our PPC marketing staff is Google Ads and Google Analytics certified. We can integrate simple to advanced tracking options for any clients, regardless of their tech stack.</p>
           </div>
         </div>
         <div className="row align-items-center">
           <div className="col-6">
-            <h3>Define Keywords & Targeting</h3>
+            <h3 className="sbsTitle">Define Keywords & Targeting</h3>
             <p>
               You can burn hundreds of thousands of dollars every year if you don't use the appropriate keywords and targeting. When approaching new clients, we frequently find that deleting subpar
               ads and keywords more than pays for our fees. In many cases, we either refine their account or create a new one from scratch.
@@ -108,10 +108,10 @@ const ppc = () => {
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
           <div className="col-6">
-            <h3>Create Ad Copies</h3>
+            <h3 className="sbsTitle">Create Ad Copies</h3>
             <p>Because you are only as good as your copy and creative, we ensure that your copy is best-in-class by putting our experience, data analysis, and testing abilities to full use.</p>
             <br />
-            <h3>Landing Page Optimisation</h3>
+            <h3 className="sbsTitle">Landing Page Optimisation</h3>
             <p>We use our unique and proven CRO methods to maximise conversion rates on your website’s advertising landing pages.</p>
           </div>
         </div>

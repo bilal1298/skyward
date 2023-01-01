@@ -1,6 +1,4 @@
-import React, { useState, useEffect, memo } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import logo from "../../public/illwhite.png";
 const Loader = () => {
