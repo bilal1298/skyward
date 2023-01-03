@@ -1,6 +1,6 @@
 .footer {
   background: #031254;
-  padding: 70px 0;
+  padding: 70px 20px;
 }
 
 .footerRow {
@@ -26,6 +26,7 @@
 
 .socialIcons {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .logo h3 {

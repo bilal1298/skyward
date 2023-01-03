@@ -1,7 +1,7 @@
 import { useState } from "react";
 import classes from "../styles/Header.module.css";
 import Link from "next/link";
-import { faCaretDown, faAlignCenter } from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown, faAlignCenter, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ServicesSub from "./ServicesSub";
 import Image from "next/image";
@@ -43,9 +43,16 @@ const Header = (props) => {
             </li>
           </ul>
         </div>
-        <div className={classes.mobileMenu}>
-          <FontAwesomeIcon icon={faAlignCenter} className={classes.hamIcon}/>
+        <div className={classes.mobileMenuIcon}>
+          <FontAwesomeIcon icon={faAlignCenter} className={classes.hamIcon} onClick={() => setMenuActive(true)} />
         </div>
+        <AnimatePresence>
+          {menuActive && (
+            <motion.div initial={{ left: "-100vw" }} animate={{ left: 0 }} transition={{type: 'stiff'}} exit={{left: '-100vw'}} className={classes.mobileMenu}>
+              <FontAwesomeIcon icon={faClose} className={classes.closeIcon} onClick={() => setMenuActive(false)} />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
       <AnimatePresence>
         {serviceActive && (

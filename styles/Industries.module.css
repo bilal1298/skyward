@@ -1,25 +1,22 @@
-.icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-    margin-top: 70px;
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0 20px;
+  flex-wrap: wrap;
 }
 
-.icons:last-of-type{
-    margin-bottom: 50px;
+.icon {
+  width: 16%;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-.icon{
-    width: 100%;
-    text-align: center;
+.icon img {
+  width: 30%;
 }
 
-.icon img{
-    width: 20%;
-}
-
-.icon p{
-    font-weight: bold;
-    margin: 20px;
+.icon p {
+  font-weight: bold;
+  margin: 20px;
 }

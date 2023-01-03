@@ -117,7 +117,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className={classes.sitemap}></div>
+       
       </div>
     </footer>
   );

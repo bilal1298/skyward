@@ -6,13 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../../components/UI/Button";
 import Image from "next/image";
 
-const FlipBoxSingle = ({ title, icon, desc, href, height }) => {
+const FlipBoxSingle = ({ title, icon, desc, href }) => {
   const [front, setFront] = useState(true);
   const toggle = () => {
     setFront(!front);
   };
   return (
-    <div className={classes.flipbox} style={{ height: `${height ? height : "360px"}` }}>
+    <div className={classes.flipbox}>
       <div className={classes.flipboxContent}>
         <motion.div className={`${classes.plusIcon} ${!front && classes.closeIcon}`} onClick={toggle} whileFocus={{ scale: 1.2 }}>
           <FontAwesomeIcon icon={faPlus} style={{ color: "rgb(124 124 124)", fontSize: "20px" }} />

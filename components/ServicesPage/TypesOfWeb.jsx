@@ -10,10 +10,12 @@ const TypesOfWeb = () => {
     <Section padding={"70px 0"} background={"#e9edff"} title={"Types of Websites We Build"}>
       <div className={classes.typesOfWeb}>
         <div className={classes.image}>
-          <Image src={desktop} alt="" />
-          <Button href="/" position={"center"}>
-            Get In Touch
-          </Button>
+          <div className={classes.imageContainer}>
+            <Image src={desktop} alt="" />
+            <Button href="/">
+              Get In Touch
+            </Button>
+          </div>
         </div>
         <div className={classes.content}>
           <div>
