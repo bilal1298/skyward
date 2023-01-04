@@ -148,3 +148,12 @@
     width: 100%;
   }
 }
+
+@media(max-width:576px){
+  .header{
+    padding: 20px;
+  }
+  .logo{
+    width: 40%;
+  }
+}
