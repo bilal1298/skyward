@@ -6,6 +6,7 @@ import astronaut from "../../public/astronaut.png";
 import moon from "../../public/moon.png";
 import classes from "../../styles/WhyUs.module.css";
 import { motion, useScroll } from "framer-motion";
+import wingman from '../../public/Skyward Digital Is Your Wingman for All Your Digital Marketing.png'
 
 const WhyUs = () => {
   const ref = useRef();
@@ -16,16 +17,16 @@ const WhyUs = () => {
 
   return (
     <Section padding={"70px 0"} background={"none"} title={"Skyward Digital Is Your Wingman for All Your Digital Marketing"}>
-      <div className="row align-items-center" ref={ref}>
-        <div className={`col-5 ${classes.images}`}>
-          <motion.div whileInView={{ x: scrollYProgress.current * 130 + "%" }} className={classes.backImage}>
+      <div className={classes.whyUs} ref={ref}>
+        <div className={`${classes.images}`}>
+          {/* <motion.div whileInView={{ x: scrollYProgress.current * 130 + "%" }} className={classes.backImage}>
             <Image src={moon} alt=""/>
-          </motion.div>
-          <motion.div whileInView={{ y: -scrollYProgress.current * 10 + "%" }} className={classes.frontImage}>
-            <Image src={astronaut} alt=""/>
+          </motion.div> */}
+          <motion.div whileInView={{ y: -scrollYProgress.current * 20 + "%" }} className={classes.frontImage}>
+            <Image src={wingman} alt=""/>
           </motion.div>
         </div>
-        <div className={`${classes.whyUsContent} col-7`} style={{marginTop: '50px'}}>
+        <div className={`${classes.whyUsContent}`} style={{marginTop: '50px'}}>
           <div>
             <h3><strong>Measurable Results</strong></h3>
             <p>

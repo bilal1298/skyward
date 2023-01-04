@@ -105,6 +105,15 @@ a {
 
 /*---------- Testimonial Swiper Start ----------*/
 
+.testimonialSwiper .swiper-slide{
+  margin-right: 35px !important;
+  width: 20% !important;
+}
+
+.testimonialSwiper .swiper-wrapper{
+  padding: 0 40px
+}
+
 .testimonialSwiper .swiper-button-next::after,
 .testimonialSwiper .swiper-button-prev::after {
   font-size: 30px !important;

@@ -1,6 +1,6 @@
 .icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 60px 0 20px;
   flex-wrap: wrap;
@@ -19,4 +19,19 @@
 .icon p {
   font-weight: bold;
   margin: 20px;
+}
+
+@media(max-width: 767px){
+  .icon{
+    width: 25%;
+  }
+  .icon p{
+    font-size: 16px;
+  }
+}
+
+@media(max-width:567px){
+  .icon{
+    width: 33%;
+  }
 }

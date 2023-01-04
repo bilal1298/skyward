@@ -81,3 +81,9 @@
     width: 50%;
   }
 }
+
+@media(max-width:767px){
+  .flipbox{
+    width: 100%;
+  }
+}

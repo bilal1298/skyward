@@ -1,4 +1,10 @@
+.whyUs{
+  display: flex;
+  align-items: center;
+}
+
 .images {
+  width: 40%;
   position: relative;
   margin-top: 50px;
 }
@@ -8,10 +14,27 @@
   z-index: 0;
 }
 
-.frontImage img {
+/* .frontImage img {
   max-width: 80%;
+} */
+
+.whyUsContent{
+  width: 60%;
 }
 
 .whyUsContent div{
   margin-bottom: 40px;
+}
+
+@media(max-width: 767px){
+  .whyUs{
+    flex-direction: column-reverse;
+  }
+  .whyUsContent{
+    width: 100%;
+  }
+  .images{
+    width: 100%;
+    margin: 0;
+  }
 }
