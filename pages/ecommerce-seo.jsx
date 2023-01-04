@@ -59,29 +59,29 @@ const ecommerceseo = () => {
         desc={
           <ul style={{ padding: "0", margin: "30px 0 40px" }}>
             <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
-              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Comprehensive site audit
+              <FontAwesomeIcon icon={faCheck} style={{ color: "#fece1a", borderRadius: "50%", padding: "10px", marginRight: "7px" }} /> Comprehensive site audit
             </li>
             <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
-              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Targeted keyword research for online
+              <FontAwesomeIcon icon={faCheck} style={{ color: "#fece1a", borderRadius: "50%", padding: "10px", marginRight: "7px" }} /> Targeted keyword research for online
               stores
             </li>
             <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
-              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Content marketing through your blog and
+              <FontAwesomeIcon icon={faCheck} style={{ color: "#fece1a", borderRadius: "50%", padding: "10px", marginRight: "7px" }} /> Content marketing through your blog and
               other 3rd party platforms
             </li>
             <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
-              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Ecommerce store optimisations for
+              <FontAwesomeIcon icon={faCheck} style={{ color: "#fece1a", borderRadius: "50%", padding: "10px", marginRight: "7px" }} /> Ecommerce store optimisations for
               product pages, category pages, and more
             </li>
             <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
-              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Technical SEO (site speed, mobile
+              <FontAwesomeIcon icon={faCheck} style={{ color: "#fece1a", borderRadius: "50%", padding: "10px", marginRight: "7px" }} /> Technical SEO (site speed, mobile
               optimization, schema markup, etc.)
             </li>
             <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
-              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> Site structure optimisation
+              <FontAwesomeIcon icon={faCheck} style={{ color: "#fece1a", borderRadius: "50%", padding: "10px", marginRight: "7px" }} /> Site structure optimisation
             </li>
             <li style={{ display: "flex", alignItems: "center", color: "#fff", fontSize: "18px", marginBottom: "15px" }}>
-              <FontAwesomeIcon icon={faCheck} style={{ background: "#fece1a", color: "#002eff", borderRadius: "50%", padding: "10px", marginRight: "15px" }} /> High quality, manual link building
+              <FontAwesomeIcon icon={faCheck} style={{ color: "#fece1a", borderRadius: "50%", padding: "10px", marginRight: "7px" }} /> High quality, manual link building
             </li>
           </ul>
         }

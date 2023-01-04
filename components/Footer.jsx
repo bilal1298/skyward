@@ -93,9 +93,10 @@ const Footer = () => {
             </div>
           </div>
           <div className={classes.form}>
+            
+            <form onSubmit={submitHandler}>
             <h3 className="title">Let's Sky-rocket Your Business</h3>
             <p>100% Transparency, No BS, No dodgy stuff. Just pure results.</p>
-            <form onSubmit={submitHandler}>
               <input type="text" name="fullName" id="" placeholder="Full Name" required />
               <input type="text" name="businessName" id="" placeholder="Business Name" required />
               <input type="email" name="email" id="" placeholder="Email" required />

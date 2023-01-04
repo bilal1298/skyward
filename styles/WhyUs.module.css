@@ -29,6 +29,7 @@
 @media(max-width: 767px){
   .whyUs{
     flex-direction: column-reverse;
+    padding: 0 20px;
   }
   .whyUsContent{
     width: 100%;
