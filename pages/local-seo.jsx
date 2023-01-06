@@ -92,8 +92,8 @@ const localseo = () => {
           </p>
         }
       />
-      <Industries />
-      <Testimonials padding={"0 0 70px"} />
+      <Industries background={"#EDC280"} />
+      <Testimonials padding={"70px 0"} />
       <CaseStudies />
     </React.Fragment>
   );

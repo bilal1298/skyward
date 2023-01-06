@@ -8,7 +8,6 @@ import CaseStudies from "../components/HomePage/CaseStudies";
 import { faRotate, faBoltLightning, faMobile, faGaugeSimpleHigh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import astronaut from "../public/astronaut.png";
-import Boxes from "../components/UI/Boxes";
 
 const ecommerce = () => {
   const flipboxItems = [
@@ -110,7 +109,6 @@ const ecommerce = () => {
       />
       <Testimonials padding={"0 0 70px"} />
       <CaseStudies />
-      <Boxes title={"Test"} padding={"70px 0"} background={"#DDE3FF"} items={flipboxItems} />
     </React.Fragment>
   );
 };

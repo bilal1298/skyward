@@ -1,0 +1,23 @@
+.accordionContainer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title svg {
+  cursor: pointer;
+}
+
+.active .title {
+  background-color: aqua;
+}
+
+.active .desc {
+  background: aqua;
+}

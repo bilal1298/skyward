@@ -1,15 +1,14 @@
 import React from "react";
 import ServicesBanner from "../components/ServicesPage/ServicesBanner";
 import NumberStrip from "../components/ServicesPage/NumberStrip";
-import TrustedBy from "../components/HomePage/TrustedBy";
 import Testimonials from "../components/HomePage/Testimonials";
 import CaseStudies from "../components/HomePage/CaseStudies";
 import Industries from "../components/HomePage/Industries";
 import Section from "../components/UI/Section";
-import Button from "../components/UI/Button";
 import astronaut from "../public/astronaut.png";
 import Image from "next/image";
 import FlipBox from "../components/ServicesPage/FlipBox";
+import classes from "../styles/pages.module.css"
 
 const nationalseo = () => {
   const flipboxItems = [
@@ -70,51 +69,51 @@ const nationalseo = () => {
           </p>
         }
       />
-      <Industries background={'#fff'}/>
+      <Industries background={"#fff"} />
       <Testimonials padding={"70px 0"} />
       <Section title={"A Deep Dive Into Our Global SEO Process"} padding={"70px 0"} background={"#dde3ff"}>
-        <div className="row align-items-center" style={{ marginTop: "70px" }}>
-          <div className="col-6 text-center">
+        <div className={classes.sbsImageContainer} style={{ marginTop: "70px" }}>
+          <div className={classes.sbsImage}>
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
-          <div className="col-6">
-            <h3 className="sbsTitle">Identify most profitable markets</h3>
+          <div className={classes.sbsContent}>
+            <h3 className={classes.sbsTitle}>Identify most profitable markets</h3>
             <p>We start with an evaluation of your current business and target market to figure out which countries you should focus more on.</p>
             <br />
-            <h3 className="sbsTitle">Strategy formulation</h3>
+            <h3 className={classes.sbsTitle}>Strategy formulation</h3>
             <p>Once we’ve determined the countries likely to yield the most success, we’ll create a go-to-market strategy, which will outline how we plan to launch our strategy.</p>
           </div>
         </div>
-        <div className="row align-items-center">
-          <div className="col-6">
-            <h3 className="sbsTitle">ROI forecasting</h3>
+        <div className={classes.sbsImageContainerI}>
+          <div className={classes.sbsContent}>
+            <h3 className={classes.sbsTitle}>ROI forecasting</h3>
             <p>
               Once we’ve drawn up a comprehensive strategy, we'll use your current marketing plan and market research to figure out which channels will make you the most money. Next, it’s time to
               launch internationally. To do that, we’ll put together a complete market launch strategy to ensure the launch is promoted and your products or services reach its intended audience.
             </p>
             <br />
-            <h3 className="sbsTitle">Market launch</h3>
+            <h3 className={classes.sbsTitle}>Market launch</h3>
             <p>
               Next, it’s time to launch internationally. To do that, we’ll put together a complete market launch strategy to ensure the launch is promoted and your products or services reach its
               intended audience.
             </p>
           </div>
-          <div className="col-6 text-center">
+          <div className={classes.sbsImage}>
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
         </div>
-        <div className="row align-items-center">
-          <div className="col-6 text-center">
+        <div className={classes.sbsImageContainer}>
+          <div className={classes.sbsImage}>
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
-          <div className="col-6">
-            <h3 className="sbsTitle">Channel-wise analysis</h3>
+          <div className={classes.sbsContent}>
+            <h3 className={classes.sbsTitle}>Channel-wise analysis</h3>
             <p>
               After the campaign is live, we will collect and analyse data to determine the cost per acquisition (total cost/amount of new customers acquired by channel). Then, we will be able to form
               a strategy going forward based on the channels that have proven to be most profitable.
             </p>
             <br />
-            <h3 className="sbsTitle">Scaling up globally</h3>
+            <h3 className={classes.sbsTitle}>Scaling up globally</h3>
             <p>Once the first campaign is up and running, we'll work harder and expand our campaigns to more countries.</p>
           </div>
         </div>

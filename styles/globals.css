@@ -37,11 +37,7 @@ body {
   background-position: 0% 80%;
 }
 
-.sbsTitle{
-  font-size: 35px;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
+
 
 /* .title::after {
   top: 5px;
@@ -105,14 +101,14 @@ a {
 
 /*---------- Testimonial Swiper Start ----------*/
 
-.testimonialSwiper .swiper-slide{
-  margin-right: 35px !important;
+/* .testimonialSwiper .swiper-slide{
+  margin-right: 50px !important;
   width: 20% !important;
 }
 
 .testimonialSwiper .swiper-wrapper{
   padding: 0 40px
-}
+} */
 
 .testimonialSwiper .swiper-button-next::after,
 .testimonialSwiper .swiper-button-prev::after {
@@ -180,5 +176,13 @@ a {
 @media (max-width: 1200px) {
   .title {
     font-size: 35px;
+  }
+}
+@media(max-width:576px){
+  p{
+    font-size: 16px;
+  }
+  .title{
+    font-size: 30px;
   }
 }

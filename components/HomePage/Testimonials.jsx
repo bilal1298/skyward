@@ -38,7 +38,7 @@ const testimonials = [
   },
 ];
 
-const Testimonials = ({padding, background}) => {
+const Testimonials = ({ padding, background }) => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   return (
     <Section padding={padding} background={background} title={<span className={"titleBackground"}>Testimonials</span>}>
@@ -72,26 +72,18 @@ const Testimonials = ({padding, background}) => {
             </div>
             <div className={classes.imagesContainer}>
               <div className={classes.images}>
-                <Swiper className="testimonialSwiper" modules={[Navigation]} spaceBetween={50} slidesPerView={3} navigation>
+                <Swiper className="testimonialSwiper" modules={[Navigation]} spaceBetween={20} slidesPerView={3} centeredSlidesBounds={true} slides navigation>
                   <SwiperSlide>
-                    <div>
-                      <Image className={`${currentTestimonial === 0 ? classes.active : undefined}`} onClick={() => setCurrentTestimonial(0)} src={profile} alt="" />
-                    </div>
+                    <Image className={`${currentTestimonial === 0 ? classes.active : undefined}`} onClick={() => setCurrentTestimonial(0)} src={profile} alt="" />
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div>
-                      <Image className={`${currentTestimonial === 1 ? classes.active : undefined}`} onClick={() => setCurrentTestimonial(1)} src={profile} alt="" />
-                    </div>
+                    <Image className={`${currentTestimonial === 1 ? classes.active : undefined}`} onClick={() => setCurrentTestimonial(1)} src={profile} alt="" />
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div>
-                      <Image className={`${currentTestimonial === 2 ? classes.active : undefined}`} onClick={() => setCurrentTestimonial(2)} src={profile} alt="" />
-                    </div>
+                    <Image className={`${currentTestimonial === 2 ? classes.active : undefined}`} onClick={() => setCurrentTestimonial(2)} src={profile} alt="" />
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div>
-                      <Image className={`${currentTestimonial === 3 ? classes.active : undefined}`} onClick={() => setCurrentTestimonial(3)} src={profile} alt="" />
-                    </div>
+                    <Image className={`${currentTestimonial === 3 ? classes.active : undefined}`} onClick={() => setCurrentTestimonial(3)} src={profile} alt="" />
                   </SwiperSlide>
                 </Swiper>
               </div>

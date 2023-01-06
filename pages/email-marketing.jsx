@@ -57,33 +57,33 @@ const emailmarketing = () => {
       />
 
       <Section title={"Custom email templates compatible with 40+ email clients, including:"} padding={"70px 0"} background={"#dde3ff"}>
-        <div className="row align-items-center" style={{ marginTop: "70px" }}>
-          <div className="col-4">
+        <div className={`row align-items-center ${classes.imagesContainer}`}>
+          <div className="col-md-4 col-6">
             <div className={classes.imageContainer}>
-              <Image style={{ width: "50%" }} src={mailchimp} alt="" />
+              <Image src={mailchimp} alt="" />
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-6">
             <div className={classes.imageContainer}>
               <Image src={braze} alt="" />
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-6">
             <div className={classes.imageContainer}>
               <Image src={marketo} alt="" />
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-6">
             <div className={classes.imageContainer}>
               <Image src={klaviyo} alt="" />
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-6">
             <div className={classes.imageContainer}>
               <Image src={sfmc} alt="" />
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-6">
             <div className={classes.imageContainer}>
               <Image src={hubspot} alt="" />
             </div>

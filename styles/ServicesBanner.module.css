@@ -10,7 +10,7 @@ div.banner {
   display: flex;
   min-height: 100vh;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
 .heroText {
@@ -95,4 +95,24 @@ div.banner {
   background-color: #fece1a;
   color: #1d1d1d !important;
   border: 2px solid #000;
+}
+
+@media (max-width: 991px) {
+  div.banner {
+    flex-direction: column;
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+  }
+  .heroText,
+  .heroForm {
+    width: 100%;
+    margin: 0;
+  }
+  .heroText{
+    margin: 50px 0;
+  }
+  .heroText h1{
+    font-size: 35px;
+  }
 }

@@ -8,6 +8,7 @@ import Section from "../components/UI/Section";
 import astronaut from "../public/astronaut.png";
 import Image from "next/image";
 import FlipBox from "../components/ServicesPage/FlipBox";
+import classes from "../styles/pages.module.css"
 
 const seo = () => {
   const flipboxItems = [
@@ -62,43 +63,43 @@ const seo = () => {
           genius. We have that genius and offer services such as Local SEO, E-Commerce SEO and National/International SEO. From on-page SEO and off-page SEO to technical SEO and link building, our
           team will equip you with a holistic and unique SEO strategy to get you ahead of your competitors.
         </p>
-        <div className="row align-items-center" style={{ marginTop: "70px" }}>
-          <div className="col-6 text-center">
+        <div className={classes.sbsImageContainer}>
+          <div className={classes.sbsImage}>
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
-          <div className="col-6">
-            <h3 className="sbsTitle">Local SEO</h3>
+          <div className={classes.sbsContent}>
+            <h3 className={classes.sbsTitle}>Local SEO</h3>
             <p>
               Local SEO: Improve hyper-targeted traffic and acquire new customers with a local SEO campaign. Ideal for local businesses. Google Business Profile optimisation, citation building,
               content marketing, and link building.
             </p>
           </div>
         </div>
-        <div className="row align-items-center">
-          <div className="col-6">
-            <h3 className="sbsTitle">E-commerce SEO</h3>
+        <div className={classes.sbsImageContainerI}>
+          <div className={classes.sbsContent}>
+            <h3 className={classes.sbsTitle}>E-commerce SEO</h3>
             <p>
               Our ecommerce SEO strategy is laser-focused on increasing your sales through technical enhancements, structured data markups, ongoing content strategy and our proprietary link building
               tactics.
             </p>
           </div>
-          <div className="col-6 text-center">
+          <div className={classes.sbsImage}>
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
         </div>
-        <div className="row align-items-center">
-          <div className="col-6 text-center">
+        <div className={classes.sbsImageContainer}>
+          <div className={classes.sbsImage}>
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
-          <div className="col-6">
-            <h3 className="sbsTitle">National/International SEO</h3>
+          <div className={classes.sbsContent}>
+            <h3 className={classes.sbsTitle}>National/International SEO</h3>
             <p>We specialise in multiregional and multilingual SEO strategies, allowing our clients to deliver engaging experiences for their target audience regardless of location or language.</p>
           </div>
         </div>
       </Section>
       <FlipBox items={flipboxItems} title={"Our Process"} desc={""} />
-      <Industries />
-      <Testimonials padding={"0 0 70px"} />
+      <Industries background={'#EDC280'} />
+      <Testimonials padding={"70px 0"} />
       <CaseStudies />
     </React.Fragment>
   );

@@ -48,8 +48,10 @@ const Header = (props) => {
         </div>
         <AnimatePresence>
           {menuActive && (
-            <motion.div initial={{ left: "-100vw" }} animate={{ left: 0 }} transition={{type: 'stiff'}} exit={{left: '-100vw'}} className={classes.mobileMenu}>
+            <motion.div initial={{ left: "-100vw" }} animate={{ left: 0 }} transition={{ type: "stiff" }} exit={{ left: "-100vw" }} className={classes.mobileMenu}>
               <FontAwesomeIcon icon={faClose} className={classes.closeIcon} onClick={() => setMenuActive(false)} />
+
+              
             </motion.div>
           )}
         </AnimatePresence>
