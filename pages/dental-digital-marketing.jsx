@@ -74,7 +74,7 @@ const dental = () => {
             </div>
           </div>
           <div className={classes.heroImage}>
-            <Image src={astronaut} />
+            <Image src={astronaut} alt="" />
           </div>
         </div>
       </section>
@@ -162,7 +162,7 @@ const dental = () => {
           <SwiperSlide>
             <div className={classes.testimonial}>
               <div className={classes.image}>
-                <Image src={astronaut} />
+                <Image src={astronaut} alt="" />
               </div>
               <div className={classes.content}>
                 <h3>John Doe</h3>
@@ -178,7 +178,7 @@ const dental = () => {
           <SwiperSlide>
             <div className={classes.testimonial}>
               <div className={classes.image}>
-                <Image src={astronaut} />
+                <Image src={astronaut} alt="" />
               </div>
               <div className={classes.content}>
                 <h3>John Doe</h3>
@@ -194,7 +194,7 @@ const dental = () => {
           <SwiperSlide>
             <div className={classes.testimonial}>
               <div className={classes.image}>
-                <Image src={astronaut} />
+                <Image src={astronaut} alt="" />
               </div>
               <div className={classes.content}>
                 <h3>John Doe</h3>
@@ -210,7 +210,7 @@ const dental = () => {
           <SwiperSlide>
             <div className={classes.testimonial}>
               <div className={classes.image}>
-                <Image src={astronaut} />
+                <Image src={astronaut} alt="" />
               </div>
               <div className={classes.content}>
                 <h3>John Doe</h3>
@@ -226,7 +226,7 @@ const dental = () => {
           <SwiperSlide>
             <div className={classes.testimonial}>
               <div className={classes.image}>
-                <Image src={astronaut} />
+                <Image src={astronaut} alt="" />
               </div>
               <div className={classes.content}>
                 <h3>John Doe</h3>
@@ -242,7 +242,7 @@ const dental = () => {
           <SwiperSlide>
             <div className={classes.testimonial}>
               <div className={classes.image}>
-                <Image src={astronaut} />
+                <Image src={astronaut} alt="" />
               </div>
               <div className={classes.content}>
                 <h3>John Doe</h3>
@@ -267,19 +267,19 @@ const dental = () => {
       >
         <div className={classes.noBrainer}>
           <div className={classes.item}>
-            <Image src={astronaut} />
+            <Image src={astronaut} alt="" />
             <h3>No Contracts</h3>
           </div>
           <div className={classes.item}>
-            <Image src={astronaut} />
+            <Image src={astronaut} alt="" />
             <h3>We don’t work with your direct competitors</h3>
           </div>
           <div className={classes.item}>
-            <Image src={astronaut} />
+            <Image src={astronaut} alt="" />
             <h3>Guaranteed new patient bookings</h3>
           </div>
           <div className={classes.item}>
-            <Image src={astronaut} />
+            <Image src={astronaut} alt="" />
             <h3>Reduce your marketing spend by at least 20%</h3>
           </div>
         </div>
