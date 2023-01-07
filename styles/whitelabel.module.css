@@ -5,7 +5,7 @@
   padding: 50px 0 150px;
   padding-top: 150px;
   text-align: center;
-  position: relative; 
+  position: relative;
   background-color: #8ea2ff;
 }
 
@@ -16,11 +16,11 @@
   margin: 0 auto;
 }
 
-.whiteLabelBanner p {
+/* .whiteLabelBanner p {
   font-size: 24px;
   width: 50%;
   margin: 40px auto 50px;
-}
+} */
 
 .whiteLabelBanner img:first-of-type {
   position: absolute;
@@ -65,7 +65,7 @@
   margin: 50px 0;
 }
 
-.whiteLabelBoxes{
+.whiteLabelBoxes {
   margin-bottom: 0;
 }
 
@@ -87,7 +87,7 @@
   width: 50%;
 }
 
-.agencyBoxes{
+.agencyBoxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -95,7 +95,7 @@
   margin: 50px 0;
 }
 
-.agencyBox{
+.agencyBox {
   width: 30%;
   margin: 15px 10px;
   background-color: #fff;
@@ -109,7 +109,7 @@
   align-items: center;
 }
 
-.agencyBox img{
+.agencyBox img {
   width: 70%;
 }
 
@@ -136,12 +136,70 @@
   margin: 30px 0;
 }
 
-.revenueGoals{
+.revenueGoals {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.revenueGoals img{
+.revenueGoals img {
   width: 30%;
 }
 
+.p {
+  width: 50%;
+  margin: 50px auto 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+  .industryBox {
+    width: 47%;
+  }
+  .whiteLabelBox {
+    width: 47%;
+    margin: 15px 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .whiteLabelBanner h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .agencyBox {
+    width: 46%;
+  }
+  .industryBox {
+    width: 46%;
+  }
+  .whiteLabelBox {
+    width: 46%;
+  }
+  .whiteLabelBanner h1 {
+    width: 90%;
+    font-size: 30px;
+  }
+  .p {
+    width: 90%;
+    font-size: 20px;
+  }
+  .whiteLabelBanner img:first-of-type,
+  .whiteLabelBanner img:last-of-type {
+    width: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  .agencyBox {
+    width: 100%;
+  }
+  .industryBox {
+    width: 100%;
+  }
+  .whiteLabelBox {
+    width: 100%;
+  }
+}

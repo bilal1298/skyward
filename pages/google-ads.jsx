@@ -9,6 +9,7 @@ import Image from "next/image";
 import BriefService from "../components/ServicesPage/BriefService";
 import { faRotate, faBoltLightning, faMobile, faGaugeSimpleHigh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import classes from "../styles/pages.module.css";
 
 const googleads = () => {
   return (
@@ -48,39 +49,39 @@ const googleads = () => {
       />
 
       <Section title={"Our Process"} padding={"70px 0"} background={"#dde3ff"}>
-        <div className="row align-items-center" style={{ marginTop: "70px" }}>
-          <div className="col-6 text-center">
+        <div className={classes.sbsImageContainer} style={{marginTop:'70px'}}>
+          <div className={classes.sbsImage}>
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
-          <div className="col-6">
-            <h3>Identify Goals</h3>
+          <div className={classes.sbsContent}>
+            <h3 className={classes.sbsTitle}>Identify Goals</h3>
             <p>Everything we do is focused on maximising your ROI. We identify goals, evaluate historical data, and create a clear plan during our initial evaluation.</p>
             <br />
-            <h3>Setup Tracking</h3>
+            <h3 className={classes.sbsTitle}>Setup Tracking</h3>
             <p>All of our PPC marketing staff is Google Ads and Google Analytics certified. We can integrate simple to advanced tracking options for any clients, regardless of their tech stack.</p>
           </div>
         </div>
-        <div className="row align-items-center">
-          <div className="col-6">
-            <h3>Define Keywords & Targeting</h3>
+        <div className={classes.sbsImageContainerI}>
+          <div className={classes.sbsContent}>
+            <h3 className={classes.sbsTitle}>Define Keywords & Targeting</h3>
             <p>
               You can burn hundreds of thousands of dollars every year if you don't use the appropriate keywords and targeting. When approaching new clients, we frequently find that deleting subpar
               ads and keywords more than pays for our fees. In many cases, we either refine their account or create a new one from scratch.
             </p>
           </div>
-          <div className="col-6 text-center">
+          <div className={classes.sbsImage}>
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
         </div>
-        <div className="row align-items-center">
-          <div className="col-6 text-center">
+        <div className={classes.sbsImageContainer}>
+          <div className={classes.sbsImage}>
             <Image src={astronaut} alt="" style={{ width: "60%" }} />
           </div>
-          <div className="col-6">
-            <h3>Create Ad Copies</h3>
+          <div className={classes.sbsContent}>
+            <h3 className={classes.sbsTitle}>Create Ad Copies</h3>
             <p>Because you are only as good as your copy and creative, we ensure that your copy is best-in-class by putting our experience, data analysis, and testing abilities to full use.</p>
             <br />
-            <h3>Landing Page Optimisation</h3>
+            <h3 className={classes.sbsTitle}>Landing Page Optimisation</h3>
             <p>We use our unique and proven CRO methods to maximise conversion rates on your website’s advertising landing pages.</p>
           </div>
         </div>

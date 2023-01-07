@@ -38,3 +38,24 @@
 .content h3 {
   font-size: 22px;
 }
+
+@media(max-width: 991px){
+  .typesOfWeb{
+    flex-direction: column-reverse;
+  }
+  .image{
+    width: 100%;
+  }
+  .imageContainer{
+    position: relative;
+    transform: translateY(0);
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    right: 0;
+  }
+  .content{
+    width: 100%;
+    padding: 0 20px;
+  }
+}

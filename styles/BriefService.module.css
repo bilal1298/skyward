@@ -98,7 +98,7 @@ div.briefService,
     flex-direction: column;
   }
   .tab1, .tab2, .tab3, .tab4{
-    margin: 10px 0;
+    margin: 20px 0;
   }
   .tab3{
     margin-top: 0;

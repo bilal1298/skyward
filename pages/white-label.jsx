@@ -27,7 +27,7 @@ const whitelabel = () => {
           <h1>
             Grow Your Agency Faster With <span className="titleBackground">White Label</span> Web Design, Seo, Google Ads, Facebook Ads, Linkedin Ads, Microsoft Ads And Tiktok Ads{" "}
           </h1>
-          <p>Skyward’s hassle-free white label services enable agencies to scale up profitably.</p>
+          <p className={classes.p} style={{marginBottom: '50px'}}>Skyward’s hassle-free white label services enable agencies to scale up profitably.</p>
           <Button href={"/"}>EXPLORE PLANS & PRICING</Button>
         </div>
         <Image src={bannerl} alt="" />
@@ -42,9 +42,7 @@ const whitelabel = () => {
         padding={"70px 0"}
         background={"#fff"}
       >
-        <p style={{ width: "50%", margin: "50px auto 0", textAlign: "center", fontSize: "24px" }}>
-          Supporting agencies from N. America and Europe to Asia and Australia in hundreds of industries and niches.
-        </p>
+        <p className={classes.p}>Supporting agencies from N. America and Europe to Asia and Australia in hundreds of industries and niches.</p>
         <div className={classes.partnerLogo}>
           <Image src={meta} alt="" />
           <Image src={microsoft} alt="" />
@@ -126,7 +124,7 @@ const whitelabel = () => {
         }
         padding={"70px 0"}
       >
-        <p className="subtitle">Agencies face many difficult dilemmas, but partnering with us shouldn't be one of them.</p>
+        <p className={classes.p}>Agencies face many difficult dilemmas, but partnering with us shouldn't be one of them.</p>
         <div className={classes.agencyBoxes}>
           <div className={classes.agencyBox}>
             <h3>Agency Growth</h3>
@@ -174,7 +172,9 @@ const whitelabel = () => {
         }
         padding={"70px 0"}
       >
-        <p style={{ width: "50%", margin: "50px auto", textAlign: "center", fontSize: "24px" }}>Our crew of trusted flight commanders are on a mission to help businesses like yours.</p>
+        <p className={classes.p} style={{ marginBottom: "50px" }}>
+          Our crew of trusted flight commanders are on a mission to help businesses like yours.
+        </p>
         <div className={classes.revenueGoals}>
           <Image src={australia} alt="" />
         </div>
