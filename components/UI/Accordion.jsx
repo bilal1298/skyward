@@ -11,7 +11,7 @@ const Accordion = ({ title, desc, background, backgroundD, color }) => {
       <div className={`${accordion ? classes.active : ""}`}>
         <div className={classes.title} onClick={() => setAccordion(!accordion)} style={{ background: `${accordion ? background : "none"}`, color: `${accordion ? color : "#000"}` }}>
           <h3>{title}</h3>
-          <FontAwesomeIcon icon={accordion ? faMinus : faPlus}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={accordion ? faMinus : faPlus} style={{fontSize: '20px'}}></FontAwesomeIcon>
         </div>
         <AnimatePresence>
           {accordion && (

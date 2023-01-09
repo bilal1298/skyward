@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import classes from "../styles/Header.module.css";
 import Link from "next/link";
 import { faCaretDown, faAlignCenter, faClose } from "@fortawesome/free-solid-svg-icons";
@@ -8,10 +8,15 @@ import Image from "next/image";
 import logo from "../public/illwhite.png";
 import { AnimatePresence, motion } from "framer-motion";
 import Accordion from "./UI/Accordion";
+import { useRouter } from "next/router";
 
 const Header = (props) => {
   const [menuActive, setMenuActive] = useState(false);
   const [serviceActive, setServiceActive] = useState(false);
+  const router = useRouter();
+  useEffect(() => {
+    setMenuActive(false);
+  }, [router]);
   return (
     <header className={`${classes.header} ${props.offset > 30 ? classes.scrolled : undefined}`}>
       <nav className={`container ${classes.nav}`}>
@@ -53,7 +58,7 @@ const Header = (props) => {
                 <Link href={"/"}>
                   <Image src={logo} alt="" />
                 </Link>
-                <FontAwesomeIcon icon={faClose} className={classes.closeIcon} onClick={() => setMenuActive(false)} />
+                <FontAwesomeIcon icon={faClose} className={classes.closeIcon} onClick={() => setMenuActive(false)} style={{color: '#000'}}/>
               </div>
 
               <Accordion
@@ -183,13 +188,13 @@ const Header = (props) => {
               />
               <ul className={classes.mobileMenuList}>
                 <li>
-                  <Link href="/">Resources</Link>
+                  <Link href="/resources">Resources</Link>
                 </li>
                 <li>
-                  <Link href="/">Pricing</Link>
+                  <Link href="/pricing">Pricing</Link>
                 </li>
                 <li>
-                  <Link href="/">About</Link>
+                  <Link href="/about">About</Link>
                 </li>
               </ul>
             </motion.div>

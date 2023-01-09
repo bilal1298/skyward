@@ -1,16 +1,17 @@
 .accordionContainer {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #d7d7d7;
 }
 
 .accordionContainer a {
   display: block;
   padding: 20px 30px;
-  font-size: 18px;
+  font-size: 16px;
+  text-transform: uppercase;
   font-weight: 600;
   color: #000;
 }
 
-.accordionContainer ul{
+.accordionContainer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -27,8 +28,9 @@
 
 .title h3 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .title svg {
