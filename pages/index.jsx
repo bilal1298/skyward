@@ -16,6 +16,7 @@ import webdesign from "../public/webdesign.svg";
 import email from "../public/email.svg";
 import whitelabel from "../public/whitelabel.svg";
 import FlipBox from "../components/ServicesPage/FlipBox";
+import Accordion from "../components/UI/Accordion";
 export default function Home() {
   const flipboxItems = [
     {
@@ -77,13 +78,14 @@ export default function Home() {
       />
       <NumberStrip />
       <About />
-      <FlipBox title={"Our Services"} items={flipboxItems} background={'#fff'}/>
+      <FlipBox title={"Our Services"} items={flipboxItems} background={"#fff"} />
       <TrustedBy />
       <WhyUs />
       <Testimonials padding={"0 0 70px"} />
       <CaseStudies />
       <Industries />
       <Blog />
+      
     </React.Fragment>
   );
 }

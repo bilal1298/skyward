@@ -7,7 +7,7 @@ import ServicesSub from "./ServicesSub";
 import Image from "next/image";
 import logo from "../public/illwhite.png";
 import { AnimatePresence, motion } from "framer-motion";
-import Button from "./UI/Button";
+import Accordion from "./UI/Accordion";
 
 const Header = (props) => {
   const [menuActive, setMenuActive] = useState(false);
@@ -49,9 +49,149 @@ const Header = (props) => {
         <AnimatePresence>
           {menuActive && (
             <motion.div initial={{ left: "-100vw" }} animate={{ left: 0 }} transition={{ type: "stiff" }} exit={{ left: "-100vw" }} className={classes.mobileMenu}>
-              <FontAwesomeIcon icon={faClose} className={classes.closeIcon} onClick={() => setMenuActive(false)} />
+              <div className={classes.mobileMenuTopBar}>
+                <Link href={"/"}>
+                  <Image src={logo} alt="" />
+                </Link>
+                <FontAwesomeIcon icon={faClose} className={classes.closeIcon} onClick={() => setMenuActive(false)} />
+              </div>
 
-              
+              <Accordion
+                title={"Services"}
+                background={"#002eff"}
+                backgroundD={"#fece1a"}
+                color={"#fff"}
+                desc={
+                  <>
+                    <Accordion
+                      title={"Digital Marketing"}
+                      backgroundD={"#f5f5f5"}
+                      desc={
+                        <>
+                          <Accordion
+                            title={"SEO"}
+                            backgroundD={"#ebebeb"}
+                            desc={
+                              <ul>
+                                <li>
+                                  <Link href="/seo">SEO</Link>
+                                </li>
+                                <li>
+                                  <Link href="/">Local SEO</Link>
+                                </li>
+                                <li>
+                                  <Link href="/">Ecommerce SEO</Link>
+                                </li>
+                                <li>
+                                  <Link href="/">National/Global SEO</Link>
+                                </li>
+                              </ul>
+                            }
+                          />
+                          <Accordion
+                            title={"PPC"}
+                            backgroundD={"#ebebeb"}
+                            desc={
+                              <ul>
+                                <li>
+                                  <Link href="/ppc">PPC</Link>
+                                </li>
+                                <li>
+                                  <Link href="/">Facebook Ads</Link>
+                                </li>
+                                <li>
+                                  <Link href="/">Google Ads</Link>
+                                </li>
+                              </ul>
+                            }
+                          />
+                          <Link href="/email-marketing">Email Marketing</Link>
+                        </>
+                      }
+                    />
+                    <Accordion
+                      title={"Web Design"}
+                      backgroundD={"#ebebeb"}
+                      desc={
+                        <ul>
+                          <li>
+                            <Link href="/">Website Design</Link>
+                          </li>
+                          <li>
+                            <Link href="/">Wordpress</Link>
+                          </li>
+                          <li>
+                            <Link href="/">Ecommerce</Link>
+                          </li>
+                          <li>
+                            <Link href="/">Business & Services</Link>
+                          </li>
+                          <li>
+                            <Link href="/">Education</Link>
+                          </li>
+                          <li>
+                            <Link href="/">Health Care</Link>
+                          </li>
+                        </ul>
+                      }
+                    />
+                    <Accordion
+                      title={"White Label"}
+                      backgroundD={"#ebebeb"}
+                      desc={
+                        <ul>
+                          <li>
+                            <Link href="/white-label">White Label</Link>
+                          </li>
+                          <li>
+                            <Link href="/white-label-seo">SEO</Link>
+                          </li>
+                          <li>
+                            <Link href="/">Web Design</Link>
+                          </li>
+                          <li>
+                            <Link href="/">PPC</Link>
+                          </li>
+                          <li>
+                            <Link href="/">Content Writing</Link>
+                          </li>
+                          <li>
+                            <Link href="/">White Label Link Building</Link>
+                          </li>
+                        </ul>
+                      }
+                    />
+                    <Accordion
+                      title={"Design"}
+                      backgroundD={"#ebebeb"}
+                      desc={
+                        <ul>
+                          <li>
+                            <Link href="/">Graphic Design</Link>
+                          </li>
+                          <li>
+                            <Link href="/">Logo Design</Link>
+                          </li>
+                          <li>
+                            <Link href="/">Content Writing</Link>
+                          </li>
+                        </ul>
+                      }
+                    />
+                  </>
+                }
+              />
+              <ul className={classes.mobileMenuList}>
+                <li>
+                  <Link href="/">Resources</Link>
+                </li>
+                <li>
+                  <Link href="/">Pricing</Link>
+                </li>
+                <li>
+                  <Link href="/">About</Link>
+                </li>
+              </ul>
             </motion.div>
           )}
         </AnimatePresence>

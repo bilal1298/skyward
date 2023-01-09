@@ -1,6 +1,19 @@
 .accordionContainer {
-  width: 1200px;
-  margin: 0 auto;
+  border-bottom: 1px solid gray;
+}
+
+.accordionContainer a {
+  display: block;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.accordionContainer ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .title {
@@ -8,16 +21,31 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  padding: 20px 30px;
+  color: #000;
+}
+
+.title h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
 }
 
 .title svg {
   cursor: pointer;
 }
 
-.active .title {
-  background-color: aqua;
+/* .active .title {
+  background-color: #ebf5ff;
 }
 
 .active .desc {
-  background: aqua;
+  background: #ebf5ff;
+} */
+
+.desc p {
+  padding: 0 30px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 0;
 }
